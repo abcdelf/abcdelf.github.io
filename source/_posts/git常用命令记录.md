@@ -6,15 +6,15 @@ tags: [git]
 ## Git删除、重命名远程分支和tag
 
 ### Git删除远程分支：
-'''	
+```
     $ git push origin --delete <branchName>
-'''
+```
 ### Git删除远程tag：
-'''
+```
     $git push origin --delete tag <tagname>
-'''
+```
 ### Git删除本地分支
-'''
+```
     $git branch -d <branchName>
-'''
+```
 
