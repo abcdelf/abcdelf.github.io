@@ -3,8 +3,9 @@ title: git命令记录
 date: 2018-04-04 12:37:04
 tags: [git]
 ---
-## Git删除、重命名远程分支和tag
-
+# Git删除、重命名远程分支和tag
+#  
+<!--more-->
 ### Git删除远程分支：
 ```
     $ git push origin --delete <branchName>

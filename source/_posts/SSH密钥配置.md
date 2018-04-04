@@ -1,15 +1,16 @@
 ---
-title: 同一台电脑同时配置github以及gitlab的SSH访问
+title: SSH密钥配置
 date: 2018-04-04 12:37:04
 tags: [git,ssh]
 ---
-## github以及gitlab等ssh密钥配置
-### 同一台电脑需要配置多个ssh密钥，用于GitHub以及gitlab。
+# 同一台电脑需要配置多个ssh密钥，用于GitHub以及gitlab
+#  
+<!--more-->
 1.ssh密钥制作：使用git bash 
 ```
     ssh-keygen -t rsa -C "your.email@example.com" -b 4096
 ```
-<!--more-->
+
 2.复制密钥命令
 ```
     pbcopy < ~/.ssh/id_rsa.pub//(macos)
