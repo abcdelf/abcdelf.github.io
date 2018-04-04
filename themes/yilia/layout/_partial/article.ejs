@@ -3,6 +3,23 @@
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
+
+        <!-- 显示阅读和评论数 -->
+        <% if (!index && post.comments){ %>
+          <br/>
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+          <span class="icon-sort"></span>
+          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+          </span>
+          </a>
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:#ef7522;font-size:14px;">
+            <span class="icon-comment"></span>
+            <span class="join-text" style="color:#ef7522;font-size:14px;">评论数:</span>
+            <span class="join-count">0</span>次
+          </a>
+          <% } %>
+
         <% if (!post.noDate){ %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
         <% } %>
@@ -80,6 +97,15 @@
 
 
 <% if (!index && post.comments){ %>
+
+  <% if (theme.livere){ %>
+    <%- partial('post/livere', {
+        key: post.slug,
+        title: post.title,
+        url: config.url+url_for(post.path)
+      }) %>
+  <% } %>
+
   <% if (theme.duoshuo){ %>
   <%- partial('post/duoshuo', {
       key: post.slug,
