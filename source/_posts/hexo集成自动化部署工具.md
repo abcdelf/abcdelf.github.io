@@ -1,7 +1,7 @@
 ---
 title: hexo集成自动化部署工具
 date: 2018-04-05 12:37:04
-tags: [git,ssh]
+tags: [hexo,travis-ci]
 ---
 #  
 <!--more-->
