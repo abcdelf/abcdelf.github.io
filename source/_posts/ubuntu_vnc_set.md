@@ -7,3 +7,7 @@ tags: [Ubuntu,VNC ]
 <!--more-->
 
 # [参考网址](http://blog.sina.com.cn/s/blog_484d87770102vl26.html)
+开启vnc service的方法：
+``` bash
+    $ sudo x11vnc -forever -passwd ***
+```
