@@ -1,6 +1,6 @@
 ---
 title: TX2 ubuntu16.04 source.list set
-date: 2018-04-10 12:37:04
+date: 2018-04-21 12:37:04
 tags: [ros, ]
 ---
 #  
