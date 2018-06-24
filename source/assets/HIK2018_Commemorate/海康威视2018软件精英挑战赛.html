@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://codechallenge.hikvision.com/topic_introd.aspx?k1=6 -->
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="designer" content="网站开发设计制作：杭州蒙特信息技术有限公司  www.mountor.cn 咨询电话0571-88368188">
+    
+<meta name="description" content="海康威视2018软件精英挑战赛">
+<meta name="keywords" content="海康威视2018软件精英挑战赛">
+<title>海康威视2018软件精英挑战赛</title>
+<script>
+    function checkTel(tel) {
+        var mobile = /^1[3|5|8]\d{9}$/, phone = /^0\d{2,3}-?\d{7,8}$/;
+        return mobile.test(tel) || phone.test(tel);
+    }
+    function newCode() {
+        document.getElementById('imgCode').src = '/ashx/Code.ashx?' + Math.random();
+    }
+    // 选择地点
+    function getS(f, name) {
+        var s = area_array[f];
+        if (s == '请选择') {
+            s = "";
+        }
+        $("input[name=" + name + "]").val(s + "_" + f);
+    }
+    function getC(p, f, name) {
+        var s = sub_array[$("#" + p + "").val()][f];
+        if (s == '请选择') {
+            s = "";
+        }
+        $("input[name=" + name + "]").val(s + "_" + f);
+    }
+    function getQ(p, f, name) {
+        var s = sub_arr[$("#" + p + "").val()][f];
+        if (s == '请选择') {
+            s = "";
+        }
+        $("input[name=" + name + "]").val(s);
+    }
+</script>
+
+    <link href="./海康威视2018软件精英挑战赛_files/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="./海康威视2018软件精英挑战赛_files/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="./海康威视2018软件精英挑战赛_files/video-js.css" rel="stylesheet" type="text/css">
+    <link href="./海康威视2018软件精英挑战赛_files/module.css" rel="stylesheet" type="text/css">
+    <link href="./海康威视2018软件精英挑战赛_files/css.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/jquery-1.11.3.min.js.下载"></script>
+    <!-- If you'd like to support IE8 -->
+    <script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/videojs-ie8.min.js.下载"></script>
+<link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css"></head>
+
+<body data-spy="scroll" data-target=".pop-anchor-menu">
+    <div class="wrapper" id="wrapper">
+
+        <!------ header start ------>
+        
+<!------ header start ------>
+<div class="header fixednt-pc" style="position: relative;">
+    <div class="head-top">
+        <div class="head-logo">
+            <a href="http://www.hikvision.com/" target="_blank" class="hk">
+                <img src="./海康威视2018软件精英挑战赛_files/logo_01.png"></a>
+            <a href="http://codechallenge.hikvision.com/index.aspx" class="code">
+                <img src="./海康威视2018软件精英挑战赛_files/logo_02.png"></a>
+        </div>
+        <div class="pull-right hidden-xs">
+            
+            <div class="head-link">
+                <a href="http://hik-alg.acmcoder.com/g/index.html#/login">登录</a>
+                <a href="http://hik-alg.acmcoder.com/g/index.html#/register">注册</a>
+            </div>
+            
+
+            <div class="head-share">
+                <a href="javascript:void(0)" class="icon-wx"></a>
+                <a href="javascript:void(0)" class="jiathis_button_tsina kjfx-a4 icon-tsina" title="分享到新浪微博"></a>
+            </div>
+        </div>
+
+        <div class="head-wx-view">
+            <img src="./海康威视2018软件精英挑战赛_files/20180503111913485.png" class="wx">
+        </div>
+    </div>
+
+    <div class="head-nav-wrp">
+        <div class="pc-nav hidden-xs">
+            
+                    <a href="http://codechallenge.hikvision.com/index.aspx">首页</a>
+                
+                    <a href="http://codechallenge.hikvision.com/game_info.aspx?k1=5">赛事信息</a>
+                
+                    <a href="http://codechallenge.hikvision.com/topic_introd.aspx?k1=6">赛题介绍</a>
+                
+                    <a href="http://hik-alg.acmcoder.com/g/index.html#/detail?guid=01433059-05de-4733-88e9-4b368b7607de">大赛中心</a>
+                
+                    <a href="http://hik-alg.acmcoder.com/g/index.html#/discuss/main?guid=01433059-05de-4733-88e9-4b368b7607de">论坛</a>
+                
+
+        </div>
+        <div class="phone-nav visible-xs">
+            <a href="javascript:void(0)" class="btn-menu"></a>
+            <div class="tool-bar">
+                
+                <span class="phone-login-before">
+                    <a href="http://hik-alg.acmcoder.com/g/index.html#/login" class="fn">登录</a>
+                    <a href="http://hik-alg.acmcoder.com/g/index.html#/register" class="fn">注册</a>
+                </span>
+                
+                <i class="divider"></i>
+                <a href="javascript:void(0)" class="jiathis_button_tsina kjfx-a4 icon-wb" title="分享到新浪微博">
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var jiathis_config = {
+        summary: " ",
+        title: '#' + document.title + '#',
+        //title: "#海康威视·萤石2017营销精英挑战赛#",
+        shortUrl: false,
+        hideMore: false
+    }
+</script>
+<script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/jia.js.下载" charset="utf-8"></script>
+<!------ header end ------>
+<!------ 弹出菜单开始 ------>
+<div class="pop-nav-box">
+    <div class="inner-box">
+        <a href="javascript:void(0)" class="btn-close"></a>
+        <div class="menu">
+            
+                    <a href="http://codechallenge.hikvision.com/index.aspx">首页</a>
+                
+                    <a href="http://codechallenge.hikvision.com/game_info.aspx?k1=5">赛事信息</a>
+                
+                    <a href="http://codechallenge.hikvision.com/topic_introd.aspx?k1=6">赛题介绍</a>
+                
+                    <a href="http://hik-alg.acmcoder.com/g/index.html#/detail?guid=01433059-05de-4733-88e9-4b368b7607de">大赛中心</a>
+                
+                    <a href="http://hik-alg.acmcoder.com/g/index.html#/discuss/main?guid=01433059-05de-4733-88e9-4b368b7607de">论坛</a>
+                
+        </div>
+    </div>
+</div>
+<!------ 弹出菜单结束------>
+<script>
+    function logout() {
+        $.ajax({
+            method: "post",
+            dataType: "text",
+            url: "/ashx/User/Login/Logout.ashx",
+            success: function (data) {
+                if (data == '1') {
+                    window.location.href = window.location.href;
+                }
+            }
+        });
+    }
+
+    function apply() {
+        $.ajax({
+            method: "post",
+            dataType: "text",
+            url: "/ashx/User/Apply.ashx",
+            success: function (data) {
+                if (data == '1') {
+                    notFunc("报名成功！");
+                } else {
+                    notFunc(data);
+                }
+            }
+        });
+    }
+
+    var memberNum = -1; // 存在团队显示
+    var msgNum = -1;    // 存在消息显示
+    var inTeam = true;  // 在团队页面
+    var captainID = 0;  // 队长ID
+    var meID = 0;       // 自己ID
+    $(function () {
+        setInterval(function () {
+            $.ajax({
+                method: "post",
+                dataType: "json",
+                url: "/ashx/User/Login/Refresh.ashx",
+                data: { meNum: memberNum, msNum: msgNum },
+                success: function (data) {
+
+                     
+
+                    if (data.members.length > 0) {
+
+                        memberNum = data.members.length;
+
+                        $(".player-list").empty();
+                        var members = data.members;
+                        var str1 = '';
+                        var str2 = '';
+
+                        for (var i = 0; i < members.length; i++) {
+                            str1 += setMember1(members[i]);
+
+                            if (inTeam)
+                                str2 += setMember2(members[i]);
+                        }
+
+                        $("#player-list1").append(str1);
+                        if (inTeam)
+                            $("#player-list2").append(str2);
+
+                        if (members.length < 3) {
+                            $("#player-list1").append(setAddMember1());
+
+                            if (inTeam)
+                                $("#player-list2").append(setAddMember2());
+                        }
+                    }
+
+                    if (data.msg.length > 0) {
+                        msgNum = data.msg.length;
+
+                        $("#list-msg").empty();
+
+                        var msgs = data.msg;
+                        var str = "";
+                        for (var i = 0; i < msgs.length; i++) {
+                            str += setMsg(msgs[i]);
+                        }
+                        $("#list-msg").append(str);
+                    }
+                }
+            });
+        }, 3000);
+    });
+    function setMsg(msg) {
+        var str = '';
+        str += '<tr>';
+        str += '<td class="date">' + msg["createTime"].replace("T", " "); + '</td>';
+        str += '<td class="desc">' + msg["content"] + '</td>';
+        str += '<td class="operation">';
+        str += '<div class="tool">';
+        if (msg["S1"] != "1")
+            str += operationMsg(msg["id"], msg["S3"]);
+        str += '</div>';
+        str += '</td>';
+        str += '</tr>';
+        return str;
+    }
+    function operationMsg(id, result) {
+        var str = '';
+        if (result == "-1") {
+            str += "<a href=\"javascript:operateMsg('" + id + "','agree')\" class=\"fn org\">同意</a>";
+            str += "<a href=\"javascript:operateMsg('" + id + "','repulse')\" class=\"fn\">拒绝</a>";
+        }
+        else if (result == "0") {
+            str += "<a href=\"javascript: void(0)\" class=\"fn refused\">已拒绝</a>";
+        }
+        else if (result == "1") {
+            str += "<a href=\"javascript: void(0)\" class=\"fn refused\">已同意</a>";
+        }
+        return str;
+    }
+    function getSexImg(sex) {
+        return sex == "男" ? "images/sex_1.jpg" : (sex == "女" ? "images/sex_2.jpg" : "images/bg_13.png")
+    }
+    function setMember1(member) {
+        var str = '';
+        str += '<li class="player-item">';
+        str += '<div class="portrait" style="background-image: url(' + getSexImg(member["sex"]) + ');">';
+        str += member["id"] == member["captain"] ? '<span class="leader">队长</span>' : '';
+        str += '</div>';
+        str += '<div class="desc">';
+        str += '<p>' + member["name"] + '</p>';
+        str += '<p>' + member["schoolName"] + '</p>';
+        str += '<p>' + member["competitionZone"] + '</p>';
+        str += '</div>';
+        str += '</li>';
+        return str;
+    }
+    function setMember2(member) {
+        var str = '';
+        str += '<li class="player-item">';
+        str += '<div class="portrait" style="background-image: url(' + getSexImg(member["sex"]) + ');">';
+        str += member["id"] == member["captain"] ? '<span class="leader">队长</span>' : '';
+        str += '</div>';
+        str += '<div class="desc">';
+        str += '<p>' + member["name"] + '</p>';
+        str += '<p>' + member["schoolName"] + '</p>';
+        str += '<p>' + member["competitionZone"] + '</p>';
+        str += '</div>';
+        str += operationMenber(member["id"]);
+        str += '</li>';
+        return str;
+    }
+    function setAddMember1() {
+        var str = '';
+        str += '<li class="player-item">';
+        str += '<div class="player-add">';
+        str += '<p>增加成员请前往<a href="/pcent_team.aspx">团队管理</a></p>';
+        str += '</div>';
+        str += '</li>';
+        return str;
+    }
+    function setAddMember2() {
+        var str = '';
+        str += '<li class="player-item">';
+        str += '<a href="javascript:popShowFun(\'.pop-add-player\')" class="portrait player-add"></a>';
+        str += '</li>';
+        return str;
+    }
+    function operationMenber(id) {
+        var str = '';
+        if (id != meID && meID == captainID)
+            str = "<div class=\"btn-tool-bar\"><a href=\"javascript:operateTeam('" + id + "','removeMember')\" class=\"btn btn-org\">移除团队</a></div>";
+        else if (id != captainID && id == meID)
+            str = "<div class=\"btn-tool-bar\"><a href=\"javascript:operateTeam('" + captainID + "','outparty')\" class=\"btn btn-org\">离开团队</a></div>";
+        return str;
+    }
+</script>
+
+        <script>
+            $(".header").addClass("fixednt-pc");
+        </script>
+        <!------ header end ------>
+
+        <!-- 头部占位符 -->
+        <div class="head-place" style="height: 0px;"></div>
+
+        <!---- main-box start ---->
+        <div class="main-box">
+            <div class="page-topic-introd">
+                <div class="global-inner">
+                    <!-- 顶部部分 -->
+                    <div class="topic-introd-top row">
+                        <!-- 顶部欢迎语 -->
+                        <div class="game-info-welcome col-md-7">
+                            <div class="wel-title">
+                                <span class="big">海康威视2018软件精英挑战赛</span>线上复赛截止：2018.06.12
+                            </div>
+                            <div class="wel-doc"><p><span style="FONT-FAMILY: 微软雅黑,Microsoft YaHei">本届大赛试题以无人机AI对战为背景，参赛选手以自建队伍为单位，在给定地图的三维空间与其他限定条件下，进行运送货物的对战比赛，每场比赛中获得价值最多者获胜。<span style="color: rgb(51, 51, 51); font-family: 微软雅黑; text-indent: 32px; background-color: rgb(255, 255, 255);">复赛赛题在初赛题目基础上增加条件，已在官网公布。复赛答案提交于</span><span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: 微软雅黑; text-indent: 32px; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; color: rgb(192, 0, 0);">6月12日中午12:00</span></span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑; text-indent: 32px; background-color: rgb(255, 255, 255);">截止。</span></span><strong>2018年6月6日开放提交复赛代码调试。</strong></p></div>
+                        </div>
+
+                        <!-- 按钮1 -->
+                        <div class="topic-fn-btn col-md-3 col-md-offset-2">
+						<a href="javascript:popShowFun(&#39;.pop-not-login&#39;);" class="btn btn-org btn-join">报名参加</a>
+					    <!--
+						<a href="http://hik-alg.acmcoder.com/g/index.html#/detail?guid=01433059-05de-4733-88e9-4b368b7607de" class="btn btn-org btn-join">报名参加</a>
+						-->
+
+                            
+                        </div>
+                    </div>
+
+                    <!-- 赛题详细信息文档开始 -->
+                    <div class="topic-introd-box">
+                        <div class="topic-doc-hd">
+                            <h2 class="topic-doc-title">海康威视2018软件精英挑战赛题目</h2>
+                        </div>
+
+                        <div class="topic-doc-bd">
+                            <!-- 题目背景 -->
+                            <div class="topic-doc-item" id="md0">
+                                <h5 class="topic-item-title"></h5>
+                                
+
+								 <!--
+                                <div class="video-box">
+								 -->
+                                    <!-- 以下调节尺寸图片 -->
+									<!--
+                                    <img src="/mtscs//" class="bg" />
+                                    <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" poster="/mtscs//" data-setup="{}" style="width: 100%; height: 100%;">
+                                        <source src="/mtscs//" type="video/mp4">
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+									  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
+                                </div>
+								 -->
+
+                            </div>
+
+                            <!-- 题目概述 -->
+                            <div class="topic-doc-item" id="md1">
+                                <h5 class="topic-item-title"></h5>
+                                
+                            </div>
+
+                            <!-- 参数设定 -->
+							 <!--
+                            <div class="topic-doc-item" id="md2">
+                                <h5 class="topic-item-title">参数设定</h5>
+                                <p></p>
+                                
+                            </div>
+							-->
+
+                            <!-- 题目说明 -->
+							<!--
+                            <div class="topic-doc-item" id="md3">
+                                <h5 class="topic-item-title"></h5>
+                                
+                            </div>
+							-->
+
+                            <!-- 输入 -->
+							<!--
+                            <div class="topic-doc-item" id="md4">
+                                <h5 class="topic-item-title"></h5>
+                                
+                                <div class="topic-doc-subitem">
+                                    <h6>说明：</h6>
+                                    
+                                </div>
+                                <div class="topic-doc-subitem">
+                                    <h6>输入示例：</h6>
+                                    
+                                </div>
+                            </div>
+							-->
+
+                            <!-- 输出 -->
+							<!--
+                            <div class="topic-doc-item" id="md5">
+                                <h5 class="topic-item-title"></h5>
+                                
+                                <div class="topic-doc-subitem">
+                                    <h6>输出示例：</h6>
+                                    
+                                </div>
+                            </div>
+							-->
+
+                            <!-- 补充说明 -->
+							 <!--
+                            <div class="topic-doc-item" id="md6">
+                                <h5 class="topic-item-title"></h5>
+                                
+                            </div>
+							 -->
+
+                            <!-- 示例展示 -->
+							<!--
+                            <div class="topic-doc-item" id="md7">
+                                <h5 class="topic-item-title"></h5>
+                                
+                                <div class="topic-doc-subitem">
+                                    <h6>一种策略如下：</h6>
+                                    
+                                </div>
+                            </div>
+							-->
+
+                            <!-- 评判标准 -->
+							 <!--
+                            <div class="topic-doc-item" id="md8">
+                                <h5 class="topic-item-title"></h5>
+                                <p></p>
+                                <div class="topic-doc-subitem">
+                                    <h6>对于地图有误的用例：</h6>
+                                    
+                                </div>
+                                <div class="topic-doc-subitem">
+                                    <h6>对于地图无误的用例：</h6>
+                                    
+                                </div>
+                            </div>
+							 -->
+
+                            <!-- 赛事讨论交流群 -->
+                            <div class="topic-doc-item" id="md9">
+                                <h5 class="topic-item-title">复赛题目</h5>
+                                <h3 style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: 微软雅黑, &quot;Microsoft YaHei&quot;; COLOR: rgb(0,0,0)"></span></h3><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0.7em; LINE-HEIGHT: 1.4em; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">背景介绍</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">海康机器人行业级无人机业务依托海康威视视频技术的积累，进行跨技术领域的深度整合，以视频图像处理为核心、以产品安全为基石、以智能应用为导向、以满足行业需求为目标，自主研发了雄鹰系列无人机及保障低空空域安全的无人机干扰器，以丰富的产品为客户提供有针对性的行业解决方案，立足安防，专注行业。题目以无人机为主题，考察参赛队伍的综合能力。这个夏天，来一起AI对战吧！</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">了解更多海康机器人业务进入</span><a title="海康机器人官网" style="FONT-SIZE: 16px; TEXT-DECORATION: underline; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,112,192)" href="http://www.hikrobotics.com/" target="_blank"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,112,192)">海康机器人官网</span></a></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0.7em; LINE-HEIGHT: 1.4em; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">题目描述</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)"><img title="xyz.png" alt="xyz.png" src="./海康威视2018软件精英挑战赛_files/6366094207606318843753413.png"></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)">在一个三维空间中，如上图所示，空间中的每个点对应一个坐标P(x,y,z) 其中x、y、z 为非负整数。x和y为水平坐标， z为垂直坐标。当z=0时，就是我们所说的地面，如下图所示：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><img title="xy.png" alt="xy.png" src="./海康威视2018软件精英挑战赛_files/6366093939273998931840255.png"></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)">在地面上存在二个停机坪P1和P2，停机坪上各有n（n &gt; 0）架规格不一的无人机。无人机可以上下以及水平移动，每一步移动一个格子（包括斜着也是移动一个格子，例如下图中对角线的移动），同一时刻只能向一个方向移动，例如当前无人机的坐标为P（4,4,4）则下一时刻无人机可以移动到P(4,4,5) 、P（4,4,3）、P(3,4,4)、P(4, 3, 4)、P(5,4,4) 、P(4,5,4)、 P(5,5,4)、 P(3,5,4)、 P(5,3,4), P(3,3,4)以及P(4,4,4)。即无人机空间上不能水平和垂直同时运动。水平上可以向四周运动，如下图所示</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)"><img title="move.png" alt="move.png" src="./海康威视2018软件精英挑战赛_files/6366093941606183981811658.png"></span></p><p><br></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">由于无人机低空水平飞行存在很大的安全隐患，因此无人机必须上升到一定高度H_low(H_low &gt; 0，包括H_low)之后，才能水平飞行。同时无人机由于他自身性能问题，飞行的最大高度为H_high (H_high &gt; H_low， 包括H_high)。不同规格的无人机载重量L（L&gt; 0）不同。</span><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">（同一时刻 一个无人机只能载一个货物，即使载重量有多余也不能载多个货物）。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">在某一时刻，水平地图上会出现不同价值的物品，（所有的物品z=0，目的地也是z=0，同一地点物品持续时间内不会出现多个，物品不会出现在建筑物内），物品的价值为V（V&gt;0），质量为（G&gt;0），最大等待时间T（T&gt;0， 如果物品在出现的时间为t， 那么在t+T之后， 物品将消失，不能再运送，如果在物品消失之前被拾起，则物品不会再消失。）以及物品需要运送到的目的D（x，y）。当无人机将物品送到目的地后，将获得物品的价值V，物品不能分拆。</span><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">在本次大赛的通讯协议JSON中，物品出现的时间用start_time表示，持续时间用remain_time表示（该值固定，不会随着时间减少），当前剩余时间用left_time表示， 每过一个单位时间，该值会减少1。例如：某物品出现的时间为60，持续时间为5，那么第一次出现start_time=60, remian_time=5, left_time=5, 下一个单位的时候start_time=60, remian_time=5, left_time=4。直到left_time=0。注意left_time=0的时候，不能捡起物品。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">选手可以用自己获取到的价值去购买无人机，以增加自己的运行效率，新购的无人机会在下一秒出现在自己的停机坪上。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">在三维空间中，存在建筑物，以及雾区， 为了简化题目建筑物以柱型方式出现，即垂直方向建筑物大小不变。物品的体积可以忽略，同时雾区也是矩形方式出现。无人机不能碰到建筑物，否则无人机将损坏不能再使用。对于雾区，对战双方不能看到对手的无人机。</span></p><p style="TEXT-INDENT: 0em">对于建筑物（黑色部分表示建筑物），无人机允许如下图所示的情况进行飞行， 从A1位置飞行到A2位置。</p><p><br></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><img title="p1.png" alt="p1.png" src="./海康威视2018软件精英挑战赛_files/6366227829320014659908589.png"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span><br></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)"></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">复赛无人机说明</h5><p>由于目前技术的限制，无人机的飞行过程中耗电量极大。为了方便做题，现在假设无人机空载的时候，耗电量极低，可以忽略不计。载货时，耗电量跟货物的重量成正比，比例系数为1，例如货物重量为100，那么单位时间的耗电量为100个单位电能。单位时间耗电量跟无人机有没有移动无关，即静止状态也需要耗能，包括无人机在地面的时候（停机坪除外）。不同的无人机电池容量不同。如果无人机在外面飞行过程中出现没电量（空载除外），即视为无人机坠毁（不论是否在地面）。选手可以在自己的停机坪对无人机进行充电，单位时间充的电量跟无人机机型有关。（无人机只能在空载的时候进行充电，如果载有货物，不能进行充电，否则视为犯规）。停机坪可以同时对多架无人机进行充电（充满电后，可以停留在停机坪）。初始无人机电量都为0，（包括比赛开始时，以及新购买的无人机），因此一开始需要充电（不打算运送货物除外）。</p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)"><br></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">复赛对战协议JSON新增项说明</h5><p>地图信息中init_UAV中新增剩余电量remain_electricity, 表示当前无人机还剩余的电量，由于一开始无人机没有电量，因此都为0。</p><p>无人机价格表增加电池容量 capacity，和单位时间充电量 charge。</p><p><br></p><p>服务器发给参赛者一下一步指令中 UAV_we和UAV_enemy中，增加剩余电量 remain_electricity, 表示当前无人机还剩余的电量。同时增加status字段值定义3（0表示正常，1表示坠毁，2表示处于雾区），表示充电。</p><p><br></p><p>选手发给服务器指令UAV_info中，增加剩余电字段 "remain_electricity"。</p><p><br></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">复赛新增项数据说明</h5><p>1. 当无人机飞到己方停机坪后，就默认开始充电，不需要选手设置，由于载货时不能充电，因此载货的时候，不能进入己方的停机坪。</p><p><br></p><p>2. 无人机剩余电量需要选手自己设置，例如某飞机（单位时间充电为1000）处于飞行载重状态，货物重量为100，假如t=40时，服务器发送过来的数据中，该架无人机剩余电量为500，那么这个时刻选手发送给服务器的数据中，剩余容量应该为400。同理对于充电状态，如果服务器发送过来当前剩余容量为1000，那么这个时刻选手发送给服务器的数据中，剩余电量为2000，（当然不能超过无人机的总容量，例如总容量为1500，那么该时刻返回的应该是1500）。如果当前时刻已经充满，那么每次返回只要返回充满的电量即可。</p><p><br></p><p>3. 进入停机坪临界说明，假设某无人机容量为4000，单位充电量为2000，（x，y）坐标为停机坪坐标，需要飞向停机坪充电。当前服务器发送过来的数据z=1，剩余电量为1000，你返回给服务器时的数据为z=0，剩余电量是3000，随后服务器返回你的数据为z=0，剩余电量为3000；假如此时你还不打算飞走，你应该返回给服务器z=0，剩余电量为4000。</p><p><br></p><p>4. 离开停机坪临界说明，假设无人机x，y坐标为停机坪坐标，还没有充满电，就要离开停机坪，当前服务器发送过来的数据z=0，剩余电量为1000，你返回给服务器的数据为z= 1，剩余电量为1000。</p><p><br></p><p>5. 取货进入临界值说明，假设无人机x，y坐标为货物坐标，货物编号为50，重量为100，当前服务器发送过来的数据z=1，剩余电量为1000，你返回给服务器的数据为z=0，剩余电量为900，货物编号为50。</p><p><br></p><p>6. 取货物离开临界值说明，假设无人机x，y坐标为货物坐标，货物编号为50，重量为100，当前服务器发送过来的数据z=0，剩余电量为900，你返回给服务器的数据为z=1，剩余电量为800，货物编号为50。</p><p><br></p><p>7. 放置货物进入临界值说明，假设x，y坐标为货物运送目标坐标，货物编号为50，重量为100，当前服务器发送过来的数据z=1，剩余电量为1000，你返回给服务器的数据为z=0，剩余电量为900，货物编号为50。</p><p><br></p><p>8. 放置货物离开临界值说明，假设x，y坐标为货物运送目标坐标，货物编号为50，重量为100，当前服务器发送过来的数据z=0，剩余电量为1000，货物编号为-1，你应该返回给服务器的数据为z=1，剩余电量为1000，货物编号为-1。</p><p><br></p><p>9. 耗电完毕坠毁临界值说明，假如t=t1时刻，某无人机剩余电量100，所载货物no=10，货物重量为100，则下一步，如果顺利到达送货点，则你应该发送给服务器z=0，货物编号10，剩余电量0，随后服务器会返回给你z=0，货物编号为-1，剩余电量为0；如果没有到达送货点，假设为z=1，则你应该发送给服务器z=1，货物编号10，剩余电量0，随后，服务器会返回给你该无人机坠毁。</p><p><br></p><p>10.&nbsp;购买无人机说明，假设某时刻t0，你发送"purchase_UAV": [ { "purchase": "F1" } ]购买无人机且货币充足，下一步t1，服务器给你返回购买成功的无人机{no: noNew1, x: 停机坪x坐标, y: 停机坪y坐标, z: 0, remain_electricity: 0, status: 0}，此时，你可以进行充电，也可以飞走。如果充电，则发送z: 0, remain_electricity: 单次充电电量，下一步服务器会确认，并返回status: 3；如果飞走，则发送z: 1, remain_electricity: 0，下一步服务器也会确认，并返回status: 0。</p><p><br></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(255,255,255)"></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">对战方式</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">每次比赛有二只队伍进行对战，每张地图比赛二次（交换停机坪），在停机坪上无人机可以重叠出现，即没有碰撞体积， 一旦离开停机坪，如果碰到其他无人机， 则二架无人机都将损坏（因此离开停机坪也必须一架一架的离开）。碰撞后， 无人机如果有载物品， 则物品也一起消失。碰撞的方式有二种，</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">&nbsp; &nbsp; &nbsp; &nbsp;1. 同一时刻，同一位置同时出现多架无人机；</span>如下图所示：前一时刻无人机位置如图1， 下一时刻无人机在同一个位置，如图2。</p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><img title="p2.png" alt="p2.png" src="./海康威视2018软件精英挑战赛_files/6366228015727899723038447.png"></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">&nbsp; &nbsp; &nbsp; &nbsp;2. 无人机飞行过程中出现相遇。</span>如下图所示 当前时刻无人机A和B在图1位置，下一个时刻变成了图2位置，就属于相遇，类似的情况也包括对角线的交换。</p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><img title="p3.png" alt="p3.png" src="./海康威视2018软件精英挑战赛_files/6366228025590156509106126.png"></p><p style="TEXT-INDENT: 0em">优先检测第二种情况，一旦飞机损坏，即刻从游戏中移除损坏的飞机，再检测第一种情况。例如，如下图所示，无人机A B向右飞行，无人机C向左飞行，那么下一时刻由于B和C存在相遇，因此先判断相遇，即B和C撞毁，从地图中移除，接下来判断位子重合，这个时候由于B和C已经消失，因此A无人机没有影响。</p><p style="TEXT-INDENT: 0em"><img title="p4.png" alt="p4.png" src="./海康威视2018软件精英挑战赛_files/6366228031596118007885458.png"></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">本次比赛不同于以往ACM，需要存在网络交互。参赛者的程序需要去链接服务器，（服务器IP，端口待定， 链接为长链接，中间不能关闭socket，否则认为失败），链接到服务器后， 服务器会发送地图信息给二个参赛者，发送地图信息后表示比赛开始，该时刻为0，参赛者程序收到地图信息，此时，参赛者不能移动无人机，不能充电；同时需要参赛者将他们所控制的无人机时刻为0的位置发送给服务器， 服务器接受到二个参赛者的信息后，做一些处理，并将信息合并分别发送给参赛者程序，此时时刻为1。同理参赛者需要将时刻为1的无人机等信息发送给服务器。以此类推， 直到比赛结束。具体发送数据格式见协议说明。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">当比赛结束时，获得的价值最多者获胜（这里的价值包括现有无人机价值+剩余价值），如果价值相同，那么所有运行时间最短的获胜，（运行时间指 服务器每次发送给参数者信息到接收到信息这段时间总和）。</span></p><p><br></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">数据说明</h5><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; LINE-HEIGHT: normal; TEXT-INDENT: 0em">比赛中关于链接服务器，以及协议的解析，我们已经提供相应的demo，参赛者可以直接拿demo来使用。题目中所有的时间都是虚构的单位时间。为了使参赛者容易理解比赛过程中的流程，下面说明下这个过程的架构。</p><p style="TEXT-INDENT: 0em">比赛过程中参赛者和服务器之间的链接如下（这部分demo中都已经实现，参赛者只要关注算法即可）：</p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-FAMILY: arial, helvetica, sans-serif"><img title="systemar.png" alt="systemar.png" src="./海康威视2018软件精英挑战赛_files/6366228049280164641223992.png"></span><br></p><p style="TEXT-INDENT: 0em">对于他们之间的数据的时序图如下：</p><p style="TEXT-INDENT: 0em"><img title="timeseq.png" alt="timeseq.png" src="./海康威视2018软件精英挑战赛_files/6366228055150407019622962.png"></p><p style="TEXT-INDENT: 0em">数据采用一问一答的模式， 当开始发送地图后，每次服务器发送给参赛者，时间+1。参赛者需要将对应time的无人机信息返回给服务器。注意：同一时刻可以移动多架无人机。每一架无人机每次最多移动一个格子（包括移动一个对角线）。</p><p style="TEXT-INDENT: 0em">建筑物数据说明：建筑物用x, y, l, w, h表示，(x, y)表示建筑物的起始位置，l表示长度，w表示宽度，h表示高度。在坐标中的位置因为x方向的范围为[x, x+l-1], y方向的范围为[y, y+w-1], z方向的范围为[0, h-1]。因此无人机可以到达例如[x,y, h] ,[x,y+w,h], [x+l, y, h],[x+l, y+w, h]等这些坐标，不算碰撞。</p><p style="TEXT-INDENT: 0em">雾区用x，y，l，w， b，t， 雾区的x，和y方向跟建筑一样，z方向的范围是[b, t]。</p><p style="TEXT-INDENT: 0em">物品说明：物品只有到达时间点才会出现，对于物品的拾取，例如物品出现time=60，出现位置为（0, 0, 0）；当前时刻为time =59，无人机位置为（0, 0, 1）；下一时刻， 服务器发送给参赛者时，time=60，同时物品出现，这个时候，该无人机可以直接拾取物品，选手可返回无人机位置为（0, 0, 0），同时选手可设置goods_no为对应的物品。 相反，如果time=59时，无人机位置为（0, 0, 0）， 下一时刻，服务器发送给参赛者时，time=60，同时物品出现，这个时候，选手如果返回无人机位置为（0, 0, 1），并同时设置物品编号，则认为操作错误。因为你是先离开0,0,0，再拾取物品。 对于无人机将货物送到目的地后，不需参赛者要设置goodsno为-1，服务器会自动将该字段设置为-1。 无人机空闲时刻可以飞到任何地方，（除了建筑物内）。由参赛者自己决定。</p><p style="TEXT-INDENT: 0em">整个地图中，最多物品个数不会超过256个，建筑物个数不会超过50个，雾区不会超过50个，无人机种类不超过64种。</p><p style="TEXT-INDENT: 0em">比赛结束的总价值 = 未撞毁无人机的价值+赚取物品的价值。</p><p><br></p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-FAMILY: arial, helvetica, sans-serif"></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">算法建议说明</h5><p style="TEXT-INDENT: 0em">由于该题目比较开发，要想考虑全面非常复杂，因此比较合适的做法是（仅做参考）</p><p style="TEXT-INDENT: 0em">1.比赛开始的时候， 可以派出所有无人机，分散到地图的各个角落。</p><p style="TEXT-INDENT: 0em">2.当物品出现后，派遣最近的无人机去拾取货物，然后根据货物的目的地进行路径规划。</p><p style="TEXT-INDENT: 0em">3.送到货物，如果没有其他货物可以送，可以再次将无人机平均分散到地图上，如果有货物要接送，那么直接进行路径规划，去货物点拾取获取。</p><p style="TEXT-INDENT: 0em">4.以上整个过程不要考虑对方无人机的干扰，否则问题又复杂化，会让选手无从下手。</p><p style="TEXT-INDENT: 0em">5.如果上面的程序完成了， 接下来可以加入对方信息， 进行优化，例如用自己廉价无人机去撞毁对方昂贵无人机，或者带有重大价值的无人机等。</p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-FAMILY: arial, helvetica, sans-serif"></span><br></p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-FAMILY: arial, helvetica, sans-serif"></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">Demo说明</h5><p style="TEXT-INDENT: 0em">以C++demo为例， 由于整个流程的架构demo都已经给出， 因此需要只需要关注AlgorithmCalculationFun 函数，每一步服务器demo都会调用该函数，参数者只需要根据自己的算法填写flyplane结构体即可。对于java和python的demo也是类似。</p><p style="TEXT-INDENT: 0em">C++ Demo:&nbsp;<a href="https://git.acmcoder.com/hikvision/UAVGoodsDemoForCPP" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsDemoForCPP</a></p><p style="TEXT-INDENT: 0em">Java Demo:&nbsp;<a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForJava8" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForJava8</a></p><p style="TEXT-INDENT: 0em">Python2 Demo:&nbsp;<a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython2" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython2</a></p><p style="TEXT-INDENT: 0em">Python3 Demo:&nbsp;<a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython3" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython3</a></p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-FAMILY: arial, helvetica, sans-serif"><br></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">协议说明</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">本次比赛评测时，会通过命令行启动您的程序，并附有3个命令行参数，第一个参数是对战控制器IP，第二个参数是对战控制器端口，第三个参数是对战校验Token；待5月中下旬开始调试时，可在我的对战中获取，获取后自行在本地启动程序并传入参数调试；正式比赛时，这3个参数由服务器自动生成。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">本次比赛网络数据传输采用json格式，对于json格式不懂的同学，可以网上查找相应的资料，我们也会在提包里面提供相应的解析代码。数据发送和接受的格式为 前面8个字节表示json长度， 接下来为json数据，整个数据包长度为8+json的长度。</span></p><p style="TEXT-INDENT: 0em">“前8个字节表示JSON长度”的说明：此8字节中的每个字节均为ascii码，表示长度对应的字符串的每一位，不够8位前面补零。</p><p style="TEXT-INDENT: 0em">例如JSON长度为1820，先将1820转换为字符串，长度为四位，然后再前面补四个0，即变成字符串“00001820”，然后在socket中进行传递。</p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><br></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">服务器发送给参赛者的json格式如下（赛题包中有相应的文件）：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参考<a href="https://cdn.acmcoder.com/assets/hikvision2018/droneaisocket.html#jump6" target="_blank">https://cdn.acmcoder.com/assets/hikvision2018/droneaisocket.html#jump6</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参赛者发送到服务器的json格式如下：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参考<a href="https://cdn.acmcoder.com/assets/hikvision2018/droneaisocket.html#jump5" target="_blank">https://cdn.acmcoder.com/assets/hikvision2018/droneaisocket.html#jump5</a></span></p><p style="TEXT-INDENT: 0em">关于Socket传输协议格式和JSON的示例，请参考：<a href="https://git.acmcoder.com/hikvision/UAVRobotSimple" target="_self">https://git.acmcoder.com/hikvision/UAVRobotSimple</a></p><p><br></p><p style="TEXT-INDENT: 0em">通讯以及json解析框架DEMO参考：<br></p><p style="TEXT-INDENT: 0em">1、C++：</p><p style="TEXT-INDENT: 0em"><a href="https://git.acmcoder.com/hikvision/UAVGoodsDemoForCPP" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsDemoForCPP</a></p><p style="TEXT-INDENT: 0em">2、Java：<br><a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForJava8" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForJava8</a><br>3、Python：<br><a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython3" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython3</a> 或 <a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython2" target="_self">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython2</a></p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: 微软雅黑, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">数据限制</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">题目中所有的数据都为非负整数，不存在浮点计算。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">所有地图的长宽 0 &lt; W,L &lt;= 200， 高度 0 &lt; H &lt;=200.</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">无人机飞行高度 0&lt; h_low &lt;= h_high &lt; H</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">所有数据计算不会超过32位整数。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">一架无人机上同时只能运载一种货物。</span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0.7em; LINE-HEIGHT: 1.4em; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">比赛说明</h5><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">初始所拥有的无人机信息会在比赛命令开始时给出，货物信息在出现时才会给出；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">每一步最长运行时间：服务器发送给参赛者后，参赛者必须在1秒内把结果返回给服务器，否则认为认输。初赛调试阶段由于是运行在选手个人电脑上，所以没有此1秒的限制，正式比赛时，选手的最后一次提交程序将会运行在一台8核16G的服务器上，此时才有1秒的限制。一次比赛不超过15分钟。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">比赛结束时间, 分三种情况：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1.所有物品都运送完毕或消失；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2.地图上没有无人机，无人机已全部撞毁（包括有价值购买无人机，但实际并没有购买）；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3.比赛超过15分钟。特别地，假如地图中已经没有未被拾起的物品，则已经在飞机上的物品必须在T=地图的长*宽*高的时间内运送完毕，但是比赛总时间还是不能超过15分钟。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参数者每次计算的数据必须要确保准确，如果出现与实际不匹配，那么认为认输。不匹配的情况有如下几种：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1.无人机运行轨迹不正确，例如出现跳跃。（允许无人机撞向建筑物，或者其他无人机，这个判断由服务器做）；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2.载重量不符合要求，例如载重量小的无人机去运送超过它载重的物品；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3.当前剩余价值不够的情况下，购买无人机；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">4.移动已经撞毁的无人机；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">5.一些不符合题意的操作。</span></p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: 微软雅黑, sans-serif; COLOR: rgb(0,0,0)"></span></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0.7em; LINE-HEIGHT: 1.4em; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0.7em; LINE-HEIGHT: 1.4em; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">初赛晋级规则</h5><p style="TEXT-INDENT: 0em"><strong>如何进入复赛：</strong></p><p style="TEXT-INDENT: 0em">1、如果最终有效代码数大于500，则随机两两分组进行PK，每组胜者直接进入下一轮；</p><p style="TEXT-INDENT: 0em">2、如果最终有效代码数小于等于500，则随机每15个代码组成为1组，组内进行两两PK，赢一次积1分，组内排名前50%的进入下一轮。</p><p><br></p><p style="TEXT-INDENT: 0em"><strong>什么是最终有效代码：</strong></p><p style="TEXT-INDENT: 0em">截止日12：00前，已经编译通过，且创建对战房间，通过与机器人或自己对战，能获取到货物价值的代码中的最后一个。</p><p><br></p><p style="TEXT-INDENT: 0em"><strong>PK方式：</strong></p><p style="TEXT-INDENT: 0em">一张地图，随机停机坪进行一局，然后交换停机坪进行一局，两局累加综合进行比较。</p><p style="TEXT-INDENT: 0em">当比赛结束时，获得的价值最多者获胜（这里的价值包括现有无人机价值+剩余价值），如果价值相同，那么所有运行时间最短的获胜，（运行时间指 服务器每次发送给参数者信息到接收到信息这段时间总和）。</p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><br></h5><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">如何提交</h5><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">本次大赛使用git进行代码管理，请在<a href="https://git.acmcoder.com/hikvision" target="_blank">https://git.acmcoder.com/hikvision</a>自行注册git账号进行代码版本管理。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">注册完git账号后，请在“用户设置”--&gt;“授权应用”--&gt;“生成新的令牌”进行令牌的生成，大赛系统将会使用。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">注意，生成的令牌只会显示一次，请生成后立刻拷贝进行妥善保存，已经用于提交代码评测的token请不要删除，否则会影响您的评测。</span></p><p style="MARGIN-BOTTOM: 10px; WHITE-SPACE: normal; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><img title="token.png" alt="token.png" src="./海康威视2018软件精英挑战赛_files/6366093979515500977285832.png"></span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">大赛将于5月中下旬左右开始代码的提交，届时，请输入令牌，即可选择对应的仓库和分支进行提交。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">注意：git账号和大赛账号不必一样，为了不泄漏您的git账号，我们在大赛系统中使用令牌进行代码的提交。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">建议由队长新建一个私有仓库，并将队员加入为协作者。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">对于要提交大赛系统进行评测的分支，建议通过分支保护功能保护起来，以免push时不小心被覆盖。</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">分支保护功能在您的代码仓库下，“仓库设置”--&gt;“管理分支”--&gt;“保护分支”</span></p><p style="MARGIN-BOTTOM: 10px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 10px; COLOR: rgb(119,119,119); TEXT-ALIGN: left; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em"><img title="branchprotect.png" alt="branchprotect.png" src="./海康威视2018软件精英挑战赛_files/6366093993787849485909123.png"></p><p style="MARGIN-BOTTOM: 0px; FONT-FAMILY: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif; WHITE-SPACE: normal; MARGIN-TOP: 0px; COLOR: rgb(119,119,119); LINE-HEIGHT: 1.42em; BACKGROUND-COLOR: rgb(255,255,255)"><br></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">编程语言</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">支持C，C++，java， python。允许使用第三方开源库，使用多线程等特性。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 24px"><strong><span style="FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">C</span></strong></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">GCC版本：7.2.0</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">MAKE版本：GNU Make 4.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">APT源：<a href="https://mirrors.aliyun.com/ubuntu/" _src="https://mirrors.aliyun.com/ubuntu/">https://mirrors.aliyun.com/ubuntu/</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">操作系统(64位)：Ubuntu 16.04.3 LTS下使用docker运行buildpack-deps:artful镜像。<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">示例及注意事项请查看：<a href="https://git.acmcoder.com/hikvision/UAVGoodsDemoForC" target="_blank">https://git.acmcoder.com/hikvision/UAVGoodsDemoForC</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1、你的依赖包安装请写在可执行文件./configure中，注意使用apt-get install -y，以免被交互打断；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2、如果你没有额外依赖包，也要准备一个空的可执行文件./configure；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3、请提供Makefile进行编译生成，生成的目标文件名必须是main.exe，备注：ubuntu也可以是以.exe结尾。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">4、评测命令：./main.exe 39.106.111.130 4010 ABC123DEFG</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参数1：39.106.111.130，是裁判服务器的IP，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数2：4010，是裁判服务器允许您连接的端口，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数3：字符串，是本次运行的令牌，以便校验您的资格，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成。<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 24px"><strong><span style="FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">C++</span></strong></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">G++版本：7.2.0</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">MAKE版本：GNU Make 4.1APT源：<a href="https://mirrors.aliyun.com/ubuntu/" _src="https://mirrors.aliyun.com/ubuntu/">https://mirrors.aliyun.com/ubuntu/</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">操作系统(64位)：Ubuntu 16.04.3 LTS下使用docker运行buildpack-deps:artful镜像<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">示例及注意事项请查看：<a href="https://git.acmcoder.com/hikvision/UAVGoodsDemoForCPP" target="_blank">https://git.acmcoder.com/hikvision/UAVGoodsDemoForCPP</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1、你的依赖包安装请写在可执行文件./configure中，注意使用apt-get install -y，以免被交互打断；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2、如果你没有额外依赖包，也要准备一个空的可执行文件./configure；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3、请提供Makefile进行编译生成，生成的目标文件名必须是main.exe，备注：ubuntu也可以是以.exe结尾。</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">4、评测命令：./main.exe 39.106.111.130 4010 ABC123DEFG</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参数1：39.106.111.130，是裁判服务器的IP，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数2：4010，是裁判服务器允许您连接的端口，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数3：字符串，是本次运行的令牌，以便校验您的资格，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成。<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 24px"><strong><span style="FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">Java</span></strong></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">Java版本：1.8.0_162</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">mvn版本：3.5.3</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">mvn镜像：<a href="http://maven.aliyun.com/nexus" target="_blank">http://maven.aliyun.com/nexus</a><br>操作系统(64位)：Ubuntu 16.04.3 LTS下使用docker运行maven:3.5.3-jdk-8镜像<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">示例及注意事项请查看：<a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForJava8" target="_blank">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForJava8</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1、不要修改pom.xml中的build节内的任何内容；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2、入口程序在./src/main/java/Main.java，不要变更main函数所在的文件；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3、我们最后的打包命令是：mvn clean install package</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">4、评测命令：java -jar output/UAVGoodsAI.jar 39.106.111.130 4010 ABC123DEFG</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参数1：39.106.111.130，是裁判服务器的IP，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数2：4010，是裁判服务器允许您连接的端口，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数3：字符串，是本次运行的令牌，以便校验您的资格，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成。<br><br></span></p><p style="MARGIN-BOTTOM: 5px; MARGIN-TOP: 5px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">java -version<br>openjdk version "1.8.0_162"</span></p><p style="MARGIN-BOTTOM: 5px; MARGIN-TOP: 5px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">OpenJDK Runtime Environment (build 1.8.0_162-8u162-b12-1~deb9u1-b12)<br>OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)<br><br></span></p><p style="MARGIN-BOTTOM: 5px; MARGIN-TOP: 5px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">mvn -version<br>Apache Maven 3.5.3 (3383c37e1f9e9b3bc3df5050c29c8aff9f295297; 2018-02-24T19:49:05Z)<br>Maven home: /usr/share/maven<br>Java version: 1.8.0_162, vendor: Oracle Corporation<br>Java home: /usr/lib/jvm/java-8-openjdk-amd64/jre</span></p><p style="MARGIN-BOTTOM: 5px; MARGIN-TOP: 5px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; TEXT-INDENT: 0em">Default locale: en, platform encoding: UTF-8</span></p><p style="MARGIN-BOTTOM: 5px; MARGIN-TOP: 5px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; TEXT-INDENT: 0em">OS name: "linux", version: "4.4.0-105-generic", arch: "amd64", family: "unix"</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 24px"><strong><span style="FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">Python2</span></strong></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">Python版本：2.7.14</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">pip镜像：<a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>操作系统(64位)：Ubuntu 16.04.3 LTS下使用docker运行python:2.7.14镜像<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">示例及注意事项请查看：https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython2</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1、入口main在main.py中，请不要变更此文件名，更不要将main入口变更至别的文件；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2、您的依赖包请写在Makefile2文件中，注意M大写；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3、Makefile3文件格式：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">每行一个依赖包<br>依赖包格式：库名字==版本号，例如numpy==1.14.2<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">4、评测命令：python2 main.py 39.106.111.130 4010 ABC123DEFG</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参数1：39.106.111.130，是裁判服务器的IP，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数2：4010，是裁判服务器允许您连接的端口，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数3：字符串，是本次运行的令牌，以便校验您的资格，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成。<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">5、评测系统已经安装的依赖包</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">numpy==1.14.2</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">scipy==1.0.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">matplotlib==2.2.2</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">scikit-learn==0.19.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">simpleai==0.8.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">tensorflow==1.7.0</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">paddlepaddle==0.11.0</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">注意，由于正式评测时每位选手只有8核16G的服务器，请谨慎使用机器学习框架。<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)"><br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 24px"><strong><span style="FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">Python3</span></strong></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">Python版本：3.6.5</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">pip镜像：<a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>操作系统(64位)：Ubuntu 16.04.3 LTS下使用docker运行python:3.6.5镜像<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">示例及注意事项请查看：<a href="https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython3" target="_blank">https://git.acmcoder.com/hikvision/UAVGoodsAIDemoForPython3</a></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">1、入口main在main.py中，请不要变更此文件名，更不要将main入口变更至别的文件；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">2、您的依赖包请写在Makefile3文件中，注意M大写；</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">3、Makefile3文件格式：</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">每行一个依赖包<br>依赖包格式：库名字==版本号，例如numpy==1.14.2<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">4、评测命令：python3 main.py 39.106.111.130 4010 ABC123DEFG</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">参数1：39.106.111.130，是裁判服务器的IP，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数2：4010，是裁判服务器允许您连接的端口，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成；<br>参数3：字符串，是本次运行的令牌，以便校验您的资格，您在本地调试时，可在“我的对战”中获取；正式评测时，由评测调度程序生成。<br></span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">5、评测系统已经安装的依赖包</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">numpy==1.14.2</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">scipy==1.0.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">matplotlib==2.2.2</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">scikit-learn==0.19.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">simpleai==0.8.1</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 14px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">tensorflow==1.7.0</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">注意，由于正式评测时每位选手只有8核16G的服务器，请谨慎使用机器学习框架。<br></span></p><p style="WHITE-SPACE: normal"><br></p><h5 class="topic-item-title" style="BOX-SIZING: border-box; FONT-SIZE: 1.25em; OVERFLOW: hidden; FONT-FAMILY: 微软雅黑; WIDTH: 943px; WHITE-SPACE: normal; FONT-WEIGHT: 500; COLOR: rgb(19,82,162); PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0em">赛事交流讨论群</h5><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">欢迎加入QQ群交流讨论大赛技术及赛制问题！</span></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><strong>软件精英挑战赛全国1群：684146505</strong></p><p style="TEXT-INDENT: 0em"><strong>软件精英挑战赛全国2群：692600084</strong><br></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><br></p><p style="MARGIN-BOTTOM: 10px; MARGIN-TOP: 10px; TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: 0em"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">关注海康威视招聘官方公众号获取大赛及校园招聘实时信息！</span></p><p style="margin-bottom: 10px; margin-top: 10px; text-align: left; line-height: normal; text-indent: 0em;"><span style="FONT-SIZE: 16px; FONT-FAMILY: arial, helvetica, sans-serif; COLOR: rgb(0,0,0)">海康威视招聘官方公众号：hikvisioncareer</span></p>
+                            </div>
+
+                            <div class="topic-doc-item" id="md10">
+                                <h5 class="topic-item-title">特别申明</h5>
+                                <p>1．参赛作品必须是原创作品，未侵犯第三方知识产权。且该作品未在报刊、杂志、网站（含开源社区）及其他媒体公开发表，未申请专利或进行版权登记的作品，未参加过其他比赛，未以任何形式进入商业渠道。</p><p>&nbsp;</p><p>2．参赛者或参赛团体同意，获奖作品相关知识产权归海康威视所有。获奖者不以同一作品形式参加其他的设计比赛或转让给他方；否则，海康威视将取消其参赛、入围与获奖资格，收回奖品及并保留追究法律责任的权利。</p><p>&nbsp;</p><p>3．因参赛作品而引发的第三方侵权纠纷，由参赛者或参赛团体承担全部法律责任。</p><p><br></p><p style="text-align: center;"><br></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 赛题详细信息文档结束 -->
+
+                </div>
+            </div>
+        </div>
+        <!---- main-box end ---->
+
+        <!------ footer start ------>
+        
+<div class="footer">
+    <a href="http://codechallenge.hikvision.com/topic_introd.aspx?k1=6#wrapper" class="btn-top">
+        <img src="./海康威视2018软件精英挑战赛_files/btn_03.png"></a>
+    <div class="foot-link">
+        <a href="http://www.hikvision.com/" target="_blank">海康威视官网</a>
+        <a href="http://campus.hikvision.com/" target="_blank">海康威视校招官网</a>
+    </div>
+    <div class="foot-copy">
+        <i class="en">©</i> 2018 杭州海康威视数字技术股份有限公司  <span class="copy">版权所有  <a href="http://www.miitbeian.gov.cn/" target="_blank">浙ICP备 05007700号-2</a></span>
+    </div>
+</div>
+
+<!-- 提示语弹框 start -->
+<div class="pop-box pop-not-func">
+    <div class="pop-inner">
+        <a href="javascript:void(0)" class="pop-close"></a>
+        <img src="./海康威视2018软件精英挑战赛_files/icon_ts.png" class="icon-ts">
+        <div class="doc"></div>
+    </div>
+</div>
+<!-- 提示语弹框 end -->
+
+        
+<!--引用微信JS-->
+<script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/jweixin-1.0.0.js.下载"></script>
+<script type="text/javascript">
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: 'wx2a1515e7918f5459', // 必填，公众号的唯一标识
+        timestamp:1529823064, // 必填，生成签名的时间戳
+        nonceStr: 'Wm3WZYTPz0wzccnW', // 必填，生成签名的随机串
+        signature: 'e25d3cbfd48a5790173d9da2f1e8b90c8d655810',// 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'scanQRCode'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+wx.ready(function(){
+    var link = "http://codechallenge.hikvision.com/index.aspx";
+    var title="海康威视2017软件精英挑战赛";
+    var imgUrl="http://codechallenge.hikvision.com/images/share.jpg";
+    var desc="海康威视2017软件精英挑战赛快点来参赛？！";
+    var kind="";
+
+    //分享到朋友圈
+    
+    wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        desc: desc, // 分享描述
+        link: link, // 分享链接
+        imgUrl: imgUrl, // 分享图标
+        success: function() {
+            // 用户确认分享后执行的回调函数
+            //alert("分享");
+             
+        },
+        cancel: function() {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    //分享给朋友
+    wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        desc: desc, // 分享描述
+        link: link, // 分享链接
+        imgUrl: imgUrl, // 分享图标
+        type: '', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function() {
+        // 用户确认分享后执行的回调函数
+            //alert("分享成功了");
+               
+            },
+        cancel: function() {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    //分享给QQ
+    wx.onMenuShareQQ({
+        title: title, // 分享标题
+        desc: desc, // 分享描述
+        link: link, // 分享链接
+        imgUrl: imgUrl, // 分享图标
+        success: function () { 
+           // 用户确认分享后执行的回调函数
+        },
+        cancel: function () { 
+           // 用户取消分享后执行的回调函数
+        }
+    });
+    //分享给腾讯微博
+    wx.onMenuShareWeibo({
+        title: title, // 分享标题
+        desc: desc, // 分享描述
+        link: link, // 分享链接
+        imgUrl: imgUrl, // 分享图标
+        success: function () { 
+           // 用户确认分享后执行的回调函数
+        },
+        cancel: function () { 
+            // 用户取消分享后执行的回调函数
+        }
+    });
+   // wx.hideOptionMenu();
+    if(kind!=""&&kind!=null)
+    {
+    wx.scanQRCode({
+            needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+            var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+        }
+        });
+    }
+    
+ });
+ function enroll() { 
+        wx.scanQRCode({
+            needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+            scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+            success: function (res) {
+            var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+        }
+        });
+     }
+    
+</script>
+<script type="text/javascript">
+    function CookieEnable2() {
+        var result = false;
+        if (navigator.cookiesEnabled) return true;
+        var arrStr = document.cookie
+        document.cookie = "testcookie=yes;";
+        var cookieSet = document.cookie;
+        if (cookieSet.indexOf("testcookie=yes") > -1) result = true;
+        return result;
+    }
+    var ref = escape(document.referrer);
+    var loc = escape(window.location.href);
+    var scr = window.screen.width;
+    var hei = window.screen.height;
+    var ecookie = 1;
+    if (!CookieEnable2()) { ecookie = 0; } //cookie禁用了 
+    $.ajax({
+        type: "post",
+        url: "account/stat.ashx",
+        dataType: 'text',
+        data: "referer=" + ref + "&loc=" + loc + "&screenwidth=" + scr + "&screenheight=" + hei + "&ecookie=" + ecookie,
+        success: function (txt) {
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+        }
+    });
+</script>
+
+
+        <!------ footer end ------>
+
+        <!-- PC端置顶菜单开始 -->
+        <div class="top-menu-box" style="display: block;">
+            
+                    <a href="javascript:anchorMove(&#39;#md0&#39;)">题目内容</a>
+                
+                    <a href="javascript:anchorMove(&#39;#md1&#39;)">特别申明</a>
+                
+        </div>
+        <!-- PC端置顶菜单结束 -->
+
+        <!-- 移动端锚点菜单开始 -->
+        <a href="javascript:void(0)" class="btn-show-anchor hidden-md hidden-lg">目录</a>
+        <div class="pop-box pop-anchor-menu">
+            <div class="pop-inner">
+                <h4 class="pop-title">赛题目录</h4>
+                <ul class="nav nav-tabs-justified">
+                    
+                            <li class=""><a href="http://codechallenge.hikvision.com/topic_introd.aspx?k1=6#md0">题目内容</a></li>
+                        
+                            <li class="active"><a href="http://codechallenge.hikvision.com/topic_introd.aspx?k1=6#md1">特别申明</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        <!-- 移动端锚点菜单结束 -->
+
+        <!-- 未登录提示弹框 开始 -->
+        
+<!-- 未登录提示弹框 开始 -->
+<div class="pop-box pop-ts-box pop-not-login">
+    <div class="pop-inner text-center">
+        <div class="pop-hd">
+            <h2 class="pop-title">提示信息</h2>
+            <a href="javascript:void(0)" class="pop-close"></a>
+        </div>
+        <div class="pop-bd">
+            <img src="./海康威视2018软件精英挑战赛_files/icon_02.png" class="icon-ts">
+            <div class="pop-doc">
+                <p>
+                    您还未<a href="http://hik-alg.acmcoder.com/g/index.html#/login">登录</a>或<a href="http://hik-alg.acmcoder.com/g/index.html#/register">注册</a>,暂时不能使用此功能！
+                </p>
+                <p><a href="javascript:void(0)" class="pop-cancel">返回继续</a>操作， 或者<a href="http://codechallenge.hikvision.com/index.aspx">返回首页</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 未登录提示弹框 结束 -->
+
+<!-- 信息未完善提示弹框 开始 -->
+<div class="pop-box pop-ts-box pop-info-lack">
+    <div class="pop-inner text-center">
+        <div class="pop-hd">
+            <h2 class="pop-title">提示信息</h2>
+            <a href="javascript:void(0)" class="pop-close"></a>
+        </div>
+        <div class="pop-bd">
+            <img src="./海康威视2018软件精英挑战赛_files/icon_02.png" class="icon-ts">
+            <div class="pop-doc">完善<a href="http://codechallenge.hikvision.com/pcent_pinfo.aspx">个人资料</a>即完成报名</div>
+        </div>
+    </div>
+</div>
+<!-- 信息未完善提示弹框 结束 -->
+
+        <!-- 信息未完善提示弹框 结束 -->
+
+        <!-- 下载试题提示弹框 开始 -->
+        <div class="pop-box pop-download-test">
+            <div class="pop-inner text-center">
+                <div class="pop-hd">
+                    <h2 class="pop-title">下载试题</h2>
+                    <a href="javascript:void(0)" class="pop-close"></a>
+                </div>
+                <div class="pop-bd">
+                    <div class="pop-doc">
+                        <p>海康威视2018软件精英挑战赛休息中试题包</p>
+                    </div>
+                    <div class="btn-tool-bar">
+                        <a href="http://codechallenge.hikvision.com/topic_introd.aspx?k1=6" class="btn btn-org col-6">下载试题</a>
+                        <a href="javascript:void(0)" class="pop-cancel btn col-6">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 下载试题提示弹框 结束 -->
+    </div>
+
+
+<script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/jquery.touchSwipe.min.js.下载"></script>
+<script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/bootstrap.min.js.下载"></script>
+<script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/video.min.js.下载"></script>
+<script type="text/javascript" src="./海康威视2018软件精英挑战赛_files/js.js.下载"></script>
+</body></html>

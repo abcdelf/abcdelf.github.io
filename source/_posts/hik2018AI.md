@@ -10,6 +10,8 @@ tags: [hik2018,A-Star,比赛]
 
 [海康威视2018软件精英挑战赛-官网](http://codechallenge.hikvision.com/index.aspx)
 
+[海康威视2018比赛规则镜像(侵删)](/assets/HIK2018_Commemorate/海康威视2018软件精英挑战赛.html)
+
 前言
 ====
 机缘巧合下，参加了海康威视2018软件精英挑战赛。
