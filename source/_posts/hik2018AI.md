@@ -24,7 +24,7 @@ tags: [hik2018,A-Star,比赛]
 
 软件执行流程图如下：
 -----------------
-![主流程图](../assets/img/hik2018_mainCycle.bmp)
+![主流程图](/assets/img/hik2018_mainCycle.bmp)
 
 源代码地址:[HIK2018无人机AI大赛-HEU-AutoCopter最终源码](https://github.com/abcdelf/hik2018)
 
