@@ -1,7 +1,7 @@
 ---
-title: ROS学习小知识(一)
-date: 2018-04-10 12:37:04
-tags: [ros, ]
+title: shawdowsocks配置
+date: 2018-07-1 12:37:04
+tags: [ss,shadowsocks ]
 ---
 #  
 <!--more-->
