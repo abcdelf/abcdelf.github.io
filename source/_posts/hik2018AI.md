@@ -36,3 +36,5 @@ tags: [hik2018,A-Star,比赛]
 > [A-Star 参考资料](https://www.jianshu.com/p/74ca39e670ba)
 >
 > [PathFind 参考源码(C,C++,java,js)](https://github.com/abcdelf/Pathfinding)
+>
+> [通俗易懂的A*讲解](https://www.cnblogs.com/leoin2012/p/3899822.html)
