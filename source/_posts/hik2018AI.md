@@ -40,3 +40,5 @@ tags: [hik2018,A-Star,比赛]
 > [通俗易懂的A*讲解](https://www.cnblogs.com/leoin2012/p/3899822.html)
 >
 >[斯坦福A*算法介绍](http://theory.stanford.edu/~amitp/GameProgramming/)
+>
+>[A*和D*算法比较](https://www.cnblogs.com/flyinggod/p/8671053.html)
