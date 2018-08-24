@@ -19,3 +19,7 @@ tags: [git]
     $git branch -d <branchName>
 ```
 
+### Git版本回退
+```
+    $git reset --hard head^
+```
