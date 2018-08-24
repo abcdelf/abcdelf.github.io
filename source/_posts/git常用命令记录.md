@@ -19,3 +19,11 @@ tags: [git]
     $git branch -d <branchName>
 ```
 
+### Git版本回退
+```
+    $git reset --hard head^
+```
+### Git本地版本和远程版本不一致，导致无法上传的问题解决
+```
+    $git push -u origin hexo -f
+```
