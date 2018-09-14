@@ -6,6 +6,7 @@ tags: [git,ssh]
 # 同一台电脑需要配置多个ssh密钥，用于GitHub以及gitlab
 #  
 <!--more-->
+## 一、基本命令
 1.ssh密钥制作：使用git bash 
 ```
     ssh-keygen -t rsa -C "your.email@example.com" -b 4096
@@ -17,7 +18,7 @@ tags: [git,ssh]
     cat ~/.ssh/id_rsa.pub | clip//(windows使用git bash)
     xclip -sel clip < ~/.ssh/id_rsa.pub//(linux)
 ```
-### 使用多个密钥时需要注意
+## 二、使用多个密钥时需要注意
 ```
     eval $(ssh-agent -s)//运行ssh客户端
     ssh-add ~/.ssh/other_id_rsa//添加自定义的ssh密钥
