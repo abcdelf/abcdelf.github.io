@@ -1,0 +1,246 @@
+
+function stopBubble(e) {
+	// 如果传入了事件对象，那么就是非ie浏览器  
+	if (e && e.stopPropagation) {
+		//因此它支持W3C的stopPropagation()方法  
+		e.stopPropagation();
+	} else {
+		//否则我们使用ie的方法来取消事件冒泡  
+		window.event.cancelBubble = true;
+	}
+}
+
+//实现滚动条无法滚动
+	var mo=function(e){e.preventDefault();};
+
+/***禁止滑动***/
+	function scrollStop(){
+        document.body.style.overflow='hidden';       
+        document.addEventListener("touchmove",mo,false);//禁止页面滑动
+	}
+
+/***取消滑动限制***/
+	function scrollMove(){
+        document.body.style.overflow='';//出现滚动条
+        document.removeEventListener("touchmove",mo,false);       
+	} 
+
+///  点击微信图标
+$('.head-share .icon-wx').on('click', function(e){
+	stopBubble(e);
+	$('.head-wx-view').show();
+});
+$(document).on('click', function(e){
+	$('.head-wx-view').hide();
+});
+
+
+/// 移动端-点击微信按钮
+$('.phone-nav .icon-wx').swipe({
+	tap:function(event, target) {
+		$('.pop-wx-view').slideDown(500);
+	}
+});
+
+/// 移动端-点击菜单按钮
+$('.phone-nav .btn-menu').swipe({
+	tap:function(event, target) {
+		$('.pop-nav-box').slideDown(500, function(){
+			$('.pop-nav-box .btn-close').on('touchstart', function(){
+				$('.pop-nav-box').fadeOut(100, function(){
+					$('.pop-nav-box .btn-close').unbind('touchstart');
+				});
+				scrollMove();
+			})
+			scrollStop();
+		});
+	}
+});
+
+/// 弹框
+$('.pop-box.pop-anchor-menu ').swipe({
+    tap: function (event, target) {
+        $('.pop-box').fadeOut(100);
+        scrollMove();
+    }
+});
+$('.pop-anchor-menu .pop-inner').swipe({
+    tap: function (event, target) {
+        stopBubble(event);
+    }
+});
+
+$('.pop-close, .pop-cancel').swipe({
+	tap:function(event, target) {
+		$('.pop-box').fadeOut(100);
+		scrollMove();
+	}
+});
+
+//// 未开发功能
+var notFunc = function(doc){
+	$('.pop-nav-box').hide();
+	$('.pop-not-func').slideDown(300).find('.doc').html(doc);
+}
+
+///  置顶导航
+function topMenuFunc (){
+	var wh = $(window).scrollTop();
+	var hh = $('.header').offset().top;
+	if(wh > (hh+20)) {
+		$('.top-menu-box').show();
+	}else{
+		$('.top-menu-box').hide();
+	}
+}
+$(window).scroll(function(){
+	var ww = $(window).width();
+	if(ww > 992){
+		topMenuFunc ();
+	}
+});
+$(window).load(function(){
+	var ww = $(window).width();
+	if(ww > 992){
+		topMenuFunc ();
+	}
+});
+$(window).resize(function(){
+	var ww = $(window).width();
+	if(ww > 992){
+		topMenuFunc ();
+	}else{
+		$('.top-menu-box').hide();
+	}
+});
+
+/// 锚点跳动
+var anchorMove = function(id){
+	var mh = $('.top-menu-box').height();
+	var idH = $(id).offset().top;
+	var h = idH - mh;
+	$('html,body').animate({
+		scrollTop: h
+	}, 300);
+}
+
+/// 锚点菜单弹框
+$('.btn-show-anchor').swipe({
+	tap:function(event, target) {
+		$('.pop-anchor-menu').fadeIn(300,function(){
+			$(this).addClass('open');
+		});
+	}
+});
+$('.pop-anchor-menu .nav-tabs-justified').swipe({
+	tap:function(event, target) {
+		$('.pop-anchor-menu').removeClass('open').fadeOut(100);
+	}
+});
+$('.pop-anchor-menu').swipe({
+	tap:function(event, target) {
+		$('.pop-anchor-menu').removeClass('open').fadeOut(100);
+	}
+});
+
+
+/// 头部导航
+function headFun () {
+	var hh = $('.header').height();
+	if($('.header').hasClass('fixednt-pc')){
+		$('.header').css('position', 'relative');
+		$('.head-place').height(0);
+	}else{
+		$('.head-place').height(hh);
+	}
+}
+
+
+$(window).load(function(){
+	headFun();
+});
+$(window).resize(function(){
+	headFun();
+});
+
+/// 弹框出现
+var popShowFun = function(obj){
+	$(obj).fadeIn(300,function(){
+		var ph = $(obj).find('.pop-inner').height(),
+			wh = $(window).height();
+		if(ph > wh*0.9){
+			//scrollStop();
+			$(obj).addClass('over');
+		}else{
+			$(obj).removeClass('over');
+		}
+	});
+}
+
+/// 标签页
+$("[data-toggle='tab']").swipe({
+	tap:function(event, target) {
+		$(this).addClass('active').siblings("[data-toggle='tab']").removeClass('active');
+	}
+});
+
+/// 忘记密码下一步操作
+var forgetStepNext = function(id){
+	if(id == '#step4'){
+		$('.forget-step-write').hide();
+		$('.form-reg-success.resetpwd').show();
+		setTimeout(function(){
+			window.location.href='login.aspx'; 
+		},5000);
+	}else{
+		var index = $(id).index();
+		var len = $('.forget-step-hd .step').length;
+		$(id).addClass('current').siblings('.forget-step').removeClass('current');
+		$('.forget-step-hd .step').eq(index).addClass('current').siblings('.step').removeClass('current');
+		for(var i = 0 ; i < index+1 ; i++){
+			$('.forget-step-hd .step').eq(i).addClass('pass');
+		}
+	}
+}
+
+
+/**********
+ * 
+ * 2017.4.26 新增
+ * by oy
+ * 
+ ********/
+/// 按钮状态点击切换
+$("a.tab").swipe({
+    tap: function (event, target) {
+        $(this).addClass('active').siblings("a.tab").removeClass('active');
+    }
+});
+/*********
+ * 
+ * 2017.5.2 新增
+ * by oy
+ * 
+ ********/
+function inputState() {
+    $('input.form-control').each(function () {
+        var hadHolder = $(this).attr('placeholder');
+        var val = $(this).val();
+        if (hadHolder != null) {
+            if (val == '') {
+                $(this).addClass('hadHolder');
+            } else {
+                $(this).removeClass('hadHolder');
+            }
+        }
+    })
+}
+$(window).load(function () {
+    inputState();
+});
+$('input.form-control').keyup(function () {
+    inputState();
+});
+$('input.form-control').blur(function () {
+    inputState();
+});

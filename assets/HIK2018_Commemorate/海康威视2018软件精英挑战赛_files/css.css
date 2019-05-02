@@ -1,0 +1,2305 @@
+/****** 赛事信息 *****/
+.page-game-info {
+  width: 100%;
+  background: url(../images/bg_03.jpg) no-repeat center top #ffffff;
+  background-size: 100% auto;
+  padding: 5.4% 0 9%;
+  font-size: 1em;
+  line-height: 1.875em;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .page-game-info {
+    background-image: url(../images/bg_06.jpg);
+  }
+}
+.global-inner {
+  width: 80%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.game-info-welcome {
+  padding: 0 2.8em;
+  margin-bottom: 5.25em;
+}
+.game-info-welcome .wel-title {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 1.2em 3.5% 1.3em;
+  background: #fff;
+  font-size: 1.25em;
+  line-height: 1.8em;
+  color: #1352a2;
+}
+.game-info-welcome .wel-title .big {
+  display: block;
+  font-size: 2em;
+  line-height: 1.35em;
+  white-space: initial;
+}
+.game-info-welcome .wel-doc {
+  width: 100%;
+  padding: 1.375em 3.5%;
+  background: #fff;
+  margin-top: 1.375em;
+}
+@media screen and (max-width: 768px) {
+  .game-info-welcome {
+    padding: 0 6.3%;
+  }
+}
+.game-info-title {
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  color: #1352a2;
+}
+.game-info-subtitle {
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #1352a2;
+  margin-top: 4px;
+}
+.game-info-item {
+  margin-bottom: 9.2%;
+}
+.game-info-item .inner-box {
+  width: 100%;
+  padding: 0 6.3%;
+}
+.game-info-item .item-hd {
+  margin-bottom: 2.125em;
+}
+.game-info-apply {
+  padding: 2.5% 0 6%;
+  background: url(../images/bg_04.png) no-repeat center center;
+  background-size: auto 100%;
+}
+.game-info-process .item-hd {
+  margin-bottom: 3.625em;
+}
+.game-info-process .game-process-item:last-child {
+  margin-bottom: 0.5em;
+}
+.game-process-item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 2.25em;
+}
+.game-process-item .process-title {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #1352a2;
+  margin-bottom: 5px;
+}
+.game-process-item .process-title img {
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.25em 0.5em 0 0;
+}
+.game-info-award .item-hd {
+  margin-bottom: 3.625em;
+}
+.game-info-award .game-process-list {
+  margin-bottom: 2px;
+}
+.game-info-award .game-process-item {
+  margin-bottom: 1.875em;
+}
+.game-info-award .process-title {
+  float: left;
+  margin: 0;
+}
+.game-info-award .ts {
+  color: #808080;
+  margin-bottom: 0.625em;
+}
+.game-info-cultivate .inner-box {
+  padding: 0;
+}
+.game-info-cultivate .item-hd {
+  padding: 0 6.3%;
+  margin-bottom: 4.375em;
+}
+.game-cultivate-list {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.25em 1.375em;
+  background: url(../images/bg_05.png);
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .game-cultivate-list {
+    width: 90%;
+    padding: 2em 1.5em;
+  }
+}
+.game-cultivate-item {
+  padding: 0 1.25em;
+  line-height: 2em;
+}
+.game-cultivate-item:last-child {
+  margin-bottom: 0;
+}
+.game-cultivate-item .inner {
+  width: 100%;
+  background: #fff;
+  padding: 1.75em 1em 3.75em;
+}
+.game-cultivate-item img {
+  width: 6.25em;
+  max-width: 6.25em;
+  display: block;
+  margin: 0 auto 2.625em;
+}
+.game-cultivate-item .title {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #1352a2;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.game-cultivate-item .desc {
+  word-break: break-word;
+}
+@media screen and (max-width: 1024px) {
+  .game-cultivate-item {
+    margin-bottom: 2em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .global-inner {
+    width: 90%;
+  }
+  .game-info-welcome .wel-title {
+    font-size: 1em;
+  }
+  .game-info-item {
+    margin-bottom: 15%;
+  }
+  .game-info-item .item-hd {
+    font-size: 0.8em;
+  }
+  .game-info-process .item-hd,
+  .game-info-award .item-hd {
+    margin-bottom: 2.125em;
+  }
+}
+/****** 赛题介绍  *****/
+.page-topic-introd {
+  width: 100%;
+  background: url(../images/bg_07.jpg) no-repeat center top #ffffff;
+  background-size: 100% auto;
+  padding: 5.4% 0 8.3%;
+  font-size: 1em;
+  line-height: 1.875em;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .page-topic-introd {
+    background-image: url(../images/bg_08.jpg);
+  }
+}
+.topic-introd-top {
+  padding: 0 6.3% 4.375em 2.8%;
+}
+.topic-introd-top .game-info-welcome {
+  padding: 0;
+  margin: 0 auto;
+}
+.topic-fn-btn {
+  padding: 1em 0;
+}
+.topic-fn-btn .btn {
+  width: 100%;
+  max-width: 13.9em;
+  height: 3.33em;
+  font-size: 1.125em;
+  line-height: 3.33em;
+  color: #fff;
+  padding: 0;
+  margin: 0.89em 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  position: relative;
+}
+.topic-fn-btn .btn.btn-org {
+  background-color: #ffbf3f;
+}
+.topic-fn-btn .btn.btn-blue {
+  background-color: #1a4781;
+}
+.topic-fn-btn .btn.btn-submit {
+  display: none;
+}
+.topic-fn-btn .btn input[type='file'] {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media screen and (max-width: 992px) {
+  .topic-fn-btn {
+    margin: 1em 0 0;
+  }
+  .topic-fn-btn .btn {
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: 0 0.625em;
+  }
+}
+@media screen and (max-width: 440px) {
+  .topic-fn-btn {
+    margin: 0;
+  }
+  .topic-fn-btn .btn {
+    width: 42%;
+  }
+}
+.topic-introd-box {
+  width: 100%;
+  padding: 0 6.3%;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #333;
+}
+.topic-doc-hd {
+  margin-bottom: 3.125em;
+}
+.topic-doc-title {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  color: #1352a2;
+}
+.topic-doc-item {
+  margin-bottom: 2.625em;
+}
+.topic-doc-item p {
+  text-indent: 2em;
+}
+.topic-doc-item img {
+  max-width: 100%;
+  display: inline-block;
+  margin: 1.75em 0 2.125em;
+}
+.topic-doc-item h6 {
+  color: #1352a2;
+  margin-top: 1em;
+  text-indent: 2em;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+.topic-doc-item pre {
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #333;
+}
+.topic-item-title {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  color: #1352a2;
+  margin-bottom: 0.7em;
+}
+.video-box {
+  width: 800px;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  margin: 2.75em auto 0;
+}
+.video-box .bg {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.video-box .video-js {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.video-box .vjs-big-play-button {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  margin: -1em 0 0 -1em;
+}
+@media screen and (max-width: 992px) {
+  .video-box {
+    width: 100%;
+  }
+}
+.top-menu-placeholder {
+  width: 100%;
+  height: 3.75em;
+  display: none;
+  overflow: hidden;
+}
+.top-menu-box {
+  width: 100%;
+  height: 3.75em;
+  display: none;
+  overflow: hidden;
+  background: #1a1a1a;
+  text-align: center;
+  font-size: 1em;
+  line-height: 3.75em;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.top-menu-box a {
+  color: #fff;
+  padding: 0 1.5%;
+}
+.btn-show-anchor {
+  width: 2.857em;
+  height: 2.857em;
+  display: block;
+  background: rgba(26, 26, 26, 0.9);
+  text-align: center;
+  font-size: 1em;
+  line-height: 2.857em;
+  color: #fff;
+  position: fixed;
+  right: 1em;
+  bottom: 3.214em;
+  z-index: 1000;
+}
+.pop-anchor-menu .pop-inner {
+  width: 64%;
+  height: 100%;
+  background: #fff;
+  left: auto;
+  right: 0;
+  top: 0;
+  transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  /* Firefox 4 */
+  -webkit-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  /* Opera */
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  /* Opera */
+}
+.pop-anchor-menu.open .pop-inner {
+  transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  /* Firefox 4 */
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  /* Opera */
+}
+.pop-anchor-menu .pop-title {
+  width: 100%;
+  height: 2.78em;
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  background: #ffbf3f;
+  font-size: 1.286em;
+  line-height: 2.78em;
+  color: #fff;
+  padding: 0 1.111em;
+}
+.pop-anchor-menu .nav-tabs-justified > li > a {
+  padding: 0.571em 1.429em;
+  display: block;
+  font-size: 1em;
+  line-height: 2em;
+  color: #333;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: none;
+}
+.pop-anchor-menu .nav-tabs-justified > li.active > a {
+  border: none;
+  background: #fafafa;
+  color: #ffbf3f;
+}
+
+.anchor-menu-item .item-title{
+  width: 100%;
+  font-size: 1.143em;
+  line-height: 2.75em;
+  color: #0d0d0d;
+  padding: 0 1.25em;
+}
+.anchor-menu-item .item-title a{
+  display: block;
+  color: #0d0d0d;
+}
+.anchor-menu-item .item-title img{
+  height: 1em;
+  vertical-align: middle;
+  margin: -0.1em 0.625em 0 0;
+}
+/***** 下载试题弹框 *****/
+.pop-download-test .pop-doc{
+  width: 100%;
+  min-height: 7em;
+  padding: 0.625em 0;
+}
+
+/**** 登录页 ****/
+.page-login-box{
+  width: 100%;
+  padding: 8.438em 0;
+  background: url(../images/bg_10.jpg) no-repeat center center;
+  background-size: cover;
+}
+.form-login-box{
+  width: 25em;
+  min-height: 32.5em;
+  background: #fff;
+  float: right;
+  padding: 2.75em 3.125em;
+}
+.form-hd{
+  margin-bottom: 2.375em;
+}
+.form-title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.417em;
+  color: #333;
+}
+.form-login-box .form-group{
+  margin-bottom: 1.875em;
+}
+.form-login-box .btn-login{
+  width: 100%;
+  display: block;
+}
+.form-login-box .form-link{
+  width: 100%;
+  overflow: hidden;
+  padding: 1em 0 0;
+  font-size: 0.875em;
+  line-height: 2em;
+  color: #999;
+}
+.form-login-box .form-link a[href]{
+  color: #1352a2;
+}
+.form-login-way{
+  margin-top: 1.5em;
+}
+.form-login-way .title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background: url(../images/bg_11.jpg) repeat-x center center;
+  font-size: 0.875em;
+  line-height: 2em;
+  color: #999;
+  text-align: center;
+  margin-bottom: 0.857em;
+}
+.form-login-way .title span{
+  height: 2em;
+  display: inline-block;
+  padding: 0 1.429em;
+  background: #fff;
+}
+.form-login-way .way{
+  text-align: center;
+}
+.form-login-way .way a{
+  width: 3.125em;
+  height: 3.125em;
+  display: inline-block;
+}
+.form-login-way .way img{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width:768px){
+  .page-login-box{
+    padding: 3em 0;
+  }
+  .form-login-box{
+    width: 100%;
+  }
+}
+
+/**** 注册页 ****/
+.page-register-box{
+  width: 100%;
+  padding: 5.625em 0 6.125em;
+  background: url(../images/bg_09.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+.page-register-box .global-inner{
+  padding: 5.625em 0.625em 6.125em;
+  border: solid 1px #1a4781;
+  background: #fff;
+}
+.form-register-hd{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.667em;
+  color: #ccc;
+  margin-bottom: 1.667em;
+}
+.form-register-hd a{
+  color: #ccc;
+  padding: 0 1.5em;
+  border-right: solid 1px #b3b3b3;
+}
+.form-register-hd a:last-child{
+  border-right: none;
+}
+.form-register-hd a.active{
+  color: #1352a2;
+}
+
+.form-register-bd{
+  min-height: 25.125em;
+}
+.form-register-bd .form-tool-group{
+  padding: 0;
+  margin-top: 2.625em;
+}
+
+.form-reg-phone,
+.form-reg-email{
+  width: 100%;
+  max-width: 35em;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:768px){
+  .page-register-box{
+    padding: 3em 0;
+  }
+  .page-register-box .global-inner{
+    padding: 2em;
+  }
+  .form-register-hd{
+    width: 100%;
+    display: table;
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
+  }
+  .form-register-hd a{
+    width: 50%;
+    display: table-cell;
+    padding: 0 0.5em;
+  }
+}
+
+.form-reg-success{
+  width: 100%;
+  display: none;
+  text-align: center;
+  padding: 2.5em 0;
+  word-break: break-word;
+}
+.form-reg-success a[href]{
+  color: #1352a2;
+  margin: 0 4px;
+}
+.form-reg-success .icon-success{
+  width: 6em;
+  max-width: 6em;
+  display: block;
+  margin: 0 auto 3.875em;
+}
+.form-reg-success .title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  color: #1a4781;
+  margin-bottom: 0.83em;
+}
+.form-reg-success .doc{
+  font-size: 1.125em;
+  line-height: 1.556em;
+  color: #000;
+}
+.form-reg-success.email .doc{
+  font-size: 1em;
+  line-height: 1.75em;
+}
+.form-reg-success.email a[href]{
+  text-decoration: underline;
+}
+.form-reg-success.email .red{
+  color: #e50017;
+}
+
+/**** 忘记密码页 ****/
+.page-forget-box{
+  width: 100%;
+  padding: 5.625em 0 6.125em;
+  background: url(../images/bg_09.jpg) no-repeat center center;
+  background-size: 100% auto;
+}
+.page-forget-box .global-inner{
+  padding: 5.125em 12% 8.25em;
+  border: solid 1px #1a4781;
+  background: #fff;
+}
+.form-reg-success.resetpwd{
+  min-height: 28.875em;
+  padding: 7.875em 0 4.875em;
+}
+
+.forget-step-hd{
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2.875em;
+}
+.forget-step-hd .step{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1em;
+  color: #ccc;
+  padding: 0 0 1.875em;
+  border-bottom: solid 2px #ccc;
+}
+.forget-step-hd .step a{
+  color: #ccc;
+}
+.forget-step-hd .step .num{
+  width: 2.56em;
+  height: 2.56em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1.1em 0 0;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.125em;
+  line-height: 2.56em;
+  color: #fff;
+  background:#b3b3b3;
+}
+.forget-step-hd .step.current,
+.forget-step-hd .step.pass{
+  border-color: #1a4781;
+  color: #333;
+}
+.forget-step-hd .step.current .num,
+.forget-step-hd .step.pass .num{
+  background-color: #1a4781;
+}
+.forget-step-hd .step.current a,
+.forget-step-hd .step.pass a{
+  color: #333;
+}
+
+.forget-step-bd{
+  width: 100%;
+  max-width: 35em;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.forget-step{
+  min-height: 13.875em;
+  padding: 7.125em 0 0;
+  display: none;
+  overflow: hidden;
+}
+.forget-step.current{
+  display: block;
+}
+
+@media screen and (max-width:768px){
+  .page-forget-box{
+    padding: 3em 0;
+  }
+  .page-forget-box .global-inner{
+    padding: 2em;
+  }
+  .forget-step-hd{
+    margin-bottom: 2em;
+  }
+  .forget-step-hd .step{
+    display: none;
+    padding-bottom: 1em;
+    font-size: 1.25em;
+  }
+  .forget-step-hd .step.current{
+    display: block;
+  }
+  .forget-step-hd .step .num{
+    width: 2em;
+    height: 2em;
+    margin: 0 0.5em 0 0;
+    line-height: 2em;
+  }
+  .forget-step{
+    padding: 0;
+  }
+  .form-reg-success.resetpwd{
+    min-height: 0;
+    padding: 3em 0;
+  }
+}
+
+/***** 个人信息-公共 *****/
+.page-pcent-box {
+  width: 100%;
+  background: #fff;
+  display: table;
+  position: relative;
+}
+.pcent-column-title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1.5em;
+  line-height: 2.67em;
+  color: #1352a2;
+  font-weight: bold;
+}
+.pcent-main-hd .tool-bar{
+  font-size: 1.25em;
+  line-height: 2.5em;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0.875em;
+}
+.pcent-main-hd .tool-bar a{
+  color: #fff;
+}
+.pcent-top-info{
+  width: 100%;
+  min-height: 15em;
+  overflow: hidden;
+  border: solid 1px #bfbfbf;
+  background: #fcfcfc;
+  padding: 1.25em 1.563em;
+  margin-bottom: 2.5em;
+}
+.pcent-top-item {
+  padding: 0 1.563em 1.625em 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #333;
+}
+.pcent-topinfo-title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background: url(../images/bg_12.jpg) repeat-x left bottom;
+  margin-bottom: 1.875em;
+}
+.pcent-topinfo-title .title{
+  font-size: 1.25em;
+  line-height: 1.4em;
+  color: #1352a2;
+  padding-bottom: 0.3em;
+  border-bottom: solid 1px #1a4781;
+  float: left;
+}
+
+.pcent-top-item.pinfo-box .media{
+  width: 100%;
+  display: table;
+  margin: 0;
+}
+.pcent-top-item.pinfo-box .portrait{
+  width: 6.25em;
+  height: 6.25em;
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/bg_13.png);
+  float: left;
+  margin: 0 1.25em 0 0;
+}
+
+.pcent-team-signot{
+  width: 100%;
+  overflow: hidden;
+  padding: 2em 0 0;
+}
+.pcent-team-signot .btn-tool-bar{
+  margin-top: 1.125em;
+}
+.pcent-team-signot .btn-tool-bar .btn{
+  width: 40%;
+  max-width: 8.89em;
+  margin: 0 5% 0 0;
+}
+
+@media screen and (max-width:768px){
+  .pcent-top-item{
+    padding: 0 0 3em;
+  }
+  .pcent-top-item:last-child{
+    padding-bottom: 0;
+  }
+  .pcent-team-signot{
+    padding: 0;
+  }
+}
+
+.pop-join-team .pop-bd{
+  padding: 4.25em 11.7%  5.5em 7.5%;
+}
+.pop-join-team .control-label{
+  color: #666;
+}
+.pop-join-team .form-tool-group{
+  margin-top: 1.25em;
+}
+
+.pop-build-team .pop-bd{
+  padding: 1.5em 10.7% 3em 9%;
+}
+.pop-build-team .tips-info{
+  text-indent: 2em;
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #13529c;
+  margin-bottom: 1.25em;
+}
+.pop-build-team .form-tool-group{
+  margin-top: 0.5em;
+}
+
+.btn-show-anchor.pcent{
+  height: auto;
+  font-size: 1em;
+  line-height: 1.429em;
+  padding: 0.36em 0;
+}
+
+.pcent-top-player .player-item{
+  width: 33.33%;
+  text-align: center;
+  padding: 0 0.625em;
+  display: table-cell;
+  vertical-align: middle;
+}
+@media screen and (max-width: 420px){
+  .pcent-top-player .player-item{
+    width: 100%;
+    display: block;
+    margin-bottom: 2.5em;
+    font-size: 1.125em;
+  }
+}
+.pcent-top-player .portrait{
+  width: 6.25em;
+  height: 6.25em;
+  display: block;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/bg_13.png);
+  margin: 0 auto 0.875em;
+  position: relative;
+}
+.pcent-top-player .portrait .leader{
+  font-size: 0.875em;
+  line-height: 2.571em;
+  color: #fff;
+  width: 2.571em;
+  height: 2.571em;
+  display: block;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  text-align: center;
+  background: #ffbf66;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pcent-top-player .player-add a{
+  color: #1352a2;
+  margin: 0 4px;
+}
+
+.pcent-main-table{
+  min-height: 14.375em;
+  margin: 0 0 7.5em;
+}
+
+.pcent-side{
+  width: 11.875em;
+  float: left;
+  background: #f5f5f5;
+  margin: 0 3.125em 0 0;
+}
+.pcent-side .menu{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1.125em;
+  line-height: 2.78em;
+  color: #333;
+  margin: 0 0 0.56em;
+  padding: 0 0 0 2.67em;
+}
+.pcent-side .menu:last-child{
+  margin: 0;
+}
+.pcent-side .menu .icon{
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: -0.2em 0.56em 0 0;
+}
+.pcent-side .menu.active{
+  background: #1a4781;
+  color: #fff;
+}
+.pcent-side .menu:hover{
+  color: #1a4781;
+}
+.pcent-side .menu.active:hover{
+  color: #fff;
+}
+
+.pcent-side .icon.icon-pinfo{
+  background-image: url(../images/pcent_01.png);
+}
+.pcent-side .menu.active .icon.icon-pinfo{
+  background-image: url(../images/pcent_05.png);
+}
+
+.pcent-side .icon.icon-mygame{
+  background-image: url(../images/pcent_02.png);
+}
+.pcent-side .menu.active .icon.icon-mygame{
+  background-image: url(../images/pcent_06.png);
+}
+
+.pcent-side .icon.icon-team{
+  background-image: url(../images/pcent_03.png);
+}
+.pcent-side .menu.active .icon.icon-team{
+  background-image: url(../images/pcent_07.png);
+}
+
+.pcent-side .icon.icon-pwd{
+  background-image: url(../images/pcent_04.png);
+}
+.pcent-side .menu.active .icon.icon-pwd{
+  background-image: url(../images/pcent_08.png);
+}
+
+.pcent-main-cell{
+  width: 100%;
+  display: table-cell;
+  vertical-align: top;
+}
+.pcent-main-hd{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.pcent-main-title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1.125em;
+  line-height: 2.78em;
+  color: #fff;
+  background: #1a4781;
+  padding: 0 0.83em;
+}
+
+/***** 个人信息-我的比赛-队长 *****/
+.pmygame-submit-test{
+  width: 100%;
+  padding: 2.125em 0.928em 2.25em;
+}
+.pmygame-submit-test .desc{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #e50017;
+  margin-bottom: 1.25em;
+}
+.pmygame-submit-test .btn-submit-test{
+  width: 10em;
+  height: 2.78em;
+  display: block;
+  background: #ffbf66;
+  position: relative;
+  font-size: 1.125em;
+  line-height: 2.78em;
+  color: #fff;
+}
+.pmygame-submit-test .tips{
+  padding: 0 0 0 1.286em;
+  font-size: 0.875em;
+  line-height: 1.429em;
+  color: #808080;
+  background: url(../images/icon_01.png) no-repeat left 0.3em;
+  background-size: 0.857em auto; 
+  margin-top: 0.5em;
+}
+
+.pmygame-grade-hd .title{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 3.125em;
+  color: #666;
+  padding: 0 0.938em;
+  background: #f5f5f5;
+}
+
+.table-pmygame-grade table{
+  width: 100%;
+  border: none;
+}
+.table-pmygame-grade th,
+.table-pmygame-grade td{
+  border: none;
+  font-weight: normal;
+  border-bottom: dotted 1px #666;
+  vertical-align: middle;
+  text-align: left;
+  color: #333;
+  overflow: hidden;
+}
+.table-pmygame-grade th{
+  font-size: 1em;
+  line-height: 1.75em;
+  padding: 0.625em 0.938em;
+}
+.table-pmygame-grade td{
+  font-size: 0.875em;
+  line-height: 2em;
+  padding: 1.571em 1.071em 0.857em;
+}
+.table-pmygame-grade td a{
+  color: #333;
+}
+.table-pmygame-grade .date{
+  width: 45%;
+}
+.table-pmygame-grade .doc{
+  width: 48%;
+}
+.table-pmygame-grade td.operation{
+  min-width: 5em;
+  color: #808080;
+  text-align: center;
+}
+.table-pmygame-grade td.operation .fn{
+  color: #808080;
+}
+
+/***** 个人信息-我的比赛-成员 *****/
+.page-pcent-mygame.player .pmygame-submit-test .btn-submit-test{
+  background: #ccc;
+  cursor: default;
+}
+.page-pcent-mygame.player .pmygame-submit-test .btn-submit-test input[type='file']{
+  display: none;
+}
+.page-pcent-mygame.player .table-pmygame-grade .operation a{
+  color: #ccc;
+  cursor: default;
+}
+
+/***** 个人中心-密码修改 ******/
+.form-pcent-pwd{
+  width: 100%;
+  max-width: 33.125em;
+  padding: 2.5em 0.938em 0;
+  overflow: hidden;
+}
+.form-pcent-pwd .userId {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 3.125em;
+  color: #4c4c4c;
+}
+.form-pcent-pwd .form-tool-group{
+  margin-top: 2.063em;
+}
+@media screen and (max-width:768px){
+  .form-pcent-pwd .control-label{
+    line-height: 2.625em;
+  }
+  .form-pcent-pwd .userId{
+    line-height: 2.625em;
+  }
+}
+
+/**** 赛程介绍 *****/
+.page-schedule-introd{
+  width: 100%;
+  background: url(../images/bg_03-1.jpg) no-repeat center top #ffffff;
+  background-size: 100% auto;
+  padding: 5.3em 0 9.75em;
+  font-size: 1em;
+  line-height: 1.875em;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .page-schedule-introd {
+    background-image: url(../images/bg_06.jpg);
+  }
+}
+
+.schedule-introd-top{
+  margin-bottom: 6.25em;
+}
+.schedule-top-title{
+  width: 100%;
+  max-width: 50em;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 1.875em;
+  text-align: center;
+  margin: 0 auto;
+}
+.schedule-introd-top .title{
+  font-size: 2.5em;
+  line-height: 1.25em;
+  color: #1352a2;
+  margin-bottom: 0.45em;
+}
+.schedule-introd-top .desc{
+  width: 100%;
+  font-size: 1.6em;
+  line-height: 2em;
+  color: #1352a2;
+}
+.schedule-introd-top .desc .days{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #fff;
+  background: #19487e;
+  margin: 0 6px;
+  padding: 0 0.17em;
+}
+.schedule-introd-top .btn-join{
+  width: 100%;
+  max-width: 14em;
+  height: 3.33em;
+  display: block;
+  margin: 0 auto;
+  line-height: 3.33em;
+}
+
+.schedule-introd img{
+  /*width: 100%;*/
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/****** 个人中心-团队管理 *****/
+.pcent-group-item{
+  width: 100%;
+  display: table;
+}
+.page-pcent-team .pcent-group-item{
+  margin-bottom: 3.75em;
+}
+.page-pcent-team .pcent-group-item:last-child{
+  margin-bottom: 0;
+}
+
+.page-pcent-team .pcent-main-hd{
+  margin-bottom: 1.25em;
+}
+
+.table-pcent-team table{
+  width: 100%;
+  border: none;
+}
+.table-pcent-team td{
+  border: none;
+  font-weight: normal;
+  border-bottom: dotted 1px #666;
+  vertical-align: middle;
+  text-align: left;
+  color: #333;
+  overflow: hidden;
+}
+.table-pcent-team td{
+  font-size: 0.875em;
+  line-height: 2em;
+  padding: 0.714em;
+}
+.table-pcent-team .date{
+  width: 24%;
+  min-width: 7em;
+}
+.table-pcent-team td.operation{
+  width: 8.571em;
+  min-width: 8.571em;
+  color: #999;
+  text-align: right;
+  white-space: nowrap;
+}
+.table-pcent-team td.operation .fn{
+  color: #999;
+  border-left: solid 1px #c6c6c6;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+.table-pcent-team td.operation .fn.org{
+  color: #fc5413;
+}
+.table-pcent-team td.operation .fn:first-child{
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.table-pcent-team td.operation .fn.refused{
+  cursor: default;
+}
+.pteam-state-joint{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #fc5413;
+  padding: 0.875em;
+}
+
+.form-pteam-leader{
+  padding: 1.5em 0 0;
+}
+.page-pcent-team.leader .form-pteam-leader .form-group{
+  margin-bottom: 1.875em;
+}
+.form-pteam-leader .control-label{
+  padding: 0 0.5em 0 0;
+}
+.pcent-top-player .player-list{
+  width: 100%;
+  display: table;
+}
+.form-group.pcent-top-player{
+  padding: 0.625em 0 0;
+}
+.form-group.pcent-top-player .player-list{
+  max-width: 31.25em;
+  line-height: 1.5em;
+}
+.form-group.pcent-top-player .player-item{
+  vertical-align: top
+}
+.form-group.pcent-top-player .player-list .btn{
+  width: 100%;
+  max-width: 7.143em;
+  height: 1.429em;
+  line-height: 1.429em;
+  font-size: 0.875em;
+}
+.form-group.pcent-top-player .player-add{
+  background-image: url(../images/btn_06.png);
+}
+.form-pteam-leader .btn-tool-bar .btn.col-6{
+  width: 40%;
+  max-width: 10em;
+  margin: 0 5% 0 0;
+  float: none;
+  display: inline-block;
+}
+.form-pteam-leader .btn-tool-bar .btn:last-child{
+  margin: 0;
+}
+.form-pteam-leader .btn-tool-bar .btn.col-6:nth-child(even){
+  float: none;
+}
+@media screen and (max-width:768px){
+  .form-pteam-leader .form-group{
+    line-height: 2em;
+    margin-bottom: 1.2em;
+  }
+  .form-pteam-leader .btn-tool-bar{
+    text-align: center;
+  }
+}
+@media screen and (max-width:575px){
+  .form-group.pcent-top-player .player-item{
+    width: 50%;
+    display: block;
+    float: left;
+    margin-bottom: 2em;
+  }
+}
+@media screen and (max-width:360px){
+  .form-group.pcent-top-player .player-item{
+    width: 100%;
+    display: block;
+    float: left;
+  }
+}
+
+
+/***** 个人信息-编辑 ****/
+.pcent-pinfo-item.pinfo .form-pinfo-bd{
+  padding: 2.5em 0 1.125em;
+}
+.form-pcent-pinfo .form-group{
+  font-size: 1em;
+  color: #333;
+}
+.form-pcent-pinfo .form-group.col-sm-6{
+  width: 50%;
+  padding: 0 1.375em 0 0;
+}
+.form-pcent-pinfo .row .form-group.col-sm-6:last-child{
+  padding: 0 0 0 1.375em;
+}
+
+.form-pcent-pinfo .control-label{
+  max-width: 8.5em;
+}
+.form-pcent-pinfo .form-control{
+  border-color: #bfbfbf;
+  background-color: #fff;
+}
+.form-pcent-pinfo .form-control[disabled]{
+  background-color: #f5f5f5;
+}
+.form-pcent-pinfo .form-control.date{
+  background: url(../images/icon_date.png) no-repeat 98% center;
+  background-size: 1.143em auto;
+}
+.form-pcent-pinfo .form-group-bd{
+  line-height: 2.5em;
+}
+.form-pcent-pinfo .form-verifCode-box{
+  padding: 0;
+}
+.form-pcent-pinfo .form-verifCode-box .form-control{
+  padding-right: 7.07em;
+}
+.form-pcent-pinfo .form-verifCode-box  .btn-verifCode{
+  width: 7.07em;
+  height: 2.857em;
+  border: solid 1px #bfbfbf;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0.357em 0;
+}
+
+.form-pcent-pinfo .form-group.language{
+  padding: 0;
+}
+.form-pcent-pinfo .form-checkbox-group{
+  margin-top: 0;
+  color: #333;
+  padding: 0.357em 0;
+}
+.form-pcent-pinfo .form-checkbox-group .checkbox-inline{
+  margin: 0 2em 0 0;
+}
+@media  screen and (max-width: 400px) {
+	.form-pcent-pinfo .form-checkbox-group .checkbox-inline{
+		width: 33%;
+		float: left;
+		margin: 0;
+	}
+}
+
+
+.pcent-pinfo-item .form-pinfo-bd{
+  padding: 0 0 1.125em;
+}
+.pcent-pinfo-item .pinfo-exp-item{
+  padding: 2.5em 0 1.125em;
+  border-bottom: dotted 1px #666666;
+}
+.pcent-pinfo-item .pinfo-exp-item:last-child{
+  border: none;
+  padding-bottom: 0;
+}
+
+.pcent-pinfo-item textarea.form-control{
+  min-height: 8.571em;
+}
+
+.pcent-pinfo-item .form-upload-group .btn-tool-bar{
+  width: auto;
+  float: left;
+  margin: 0 0.625em 0 0;
+}
+.pcent-pinfo-item .form-upload-group .btn-upload{
+  width: 8.3em;
+  height: 2.22em;
+  line-height: 2.22em;
+}
+.pcent-pinfo-item .form-upload-group .tips{
+	width: 100%;
+  float: left;
+  font-size: 0.875em;
+  color: #999;
+  font-size: 0.875em;
+	line-height: 1.571em;
+	color: #999;
+	padding: 0.643em 0;
+}
+.pcent-pinfo-item .form-upload-group .error{
+	color: #fc5413;
+	font-size: 0.875em;
+	line-height: 1.571em;
+	padding: 0.643em 0 0.643em 1.5em;
+	background: url(../images/icon_03.png) no-repeat left center;
+	background-size: 1em auto;
+}
+.pcent-pinfo-item .form-upload-group .upload-doc{
+  width: 100%;
+  height: 2.857em;
+  overflow: hidden;
+  float: left;
+  font-size: 0.875em;
+  line-height: 2.142em;
+  color: #333;
+  padding: 0.357em 0.571em;
+  background: #f5f5f5;
+  margin-top: 1.571em;
+}
+.pcent-pinfo-item.pwdset .form-pinfo-bd{
+  padding: 2.5em 0 1.125em;
+}
+
+.form-pcent-pinfo .form-tool-group{
+  margin-top: 0.625em;
+}
+.form-pcent-pinfo .form-tool-group .btn{
+  width: 40%;
+  max-width: 8.3em;
+  margin: 0 5% 0 0;
+}
+.form-pcent-pinfo .form-tool-group .btn.col-6:nth-child(even){
+  float: left;
+  margin: 0;
+}
+
+@media screen and (max-width:768px){
+  .form-pcent-pinfo .form-group.col-sm-6{
+    width: 100%;
+    padding: 0;
+  }
+  .form-pcent-pinfo .row .form-group.col-sm-6:last-child{
+    padding: 0;
+  }
+  
+  .form-pcent-pinfo .form-group-bd{
+    line-height: 2em;
+  }
+}
+
+/****** 4-24 减少新添加 *****/
+.form-pcent-pinfo .del{
+  float: right;
+  width: 5em;
+  height: 2.22em;
+  font-size: 1.125em;
+  line-height: 2.22em;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+}
+
+
+/***** 新增-用户注册协议 ****/
+.pop-register-agreement .pop-bd{
+  padding: 1.875em 6% 3.125em;
+}
+.register-agreement{
+  width: 100%;
+  max-height: 30em;
+  display: block;
+  overflow: hidden;
+  overflow-y: auto;
+  font-size: 0.875em;
+  line-height: 1.714em;
+  color: #333;
+}
+.pop-register-agreement .btn-tool-bar{
+  margin-top: 3.125em;
+  text-align: center;
+}
+.pop-register-agreement .btn-agree{
+  width: 8.89em;
+}
+
+
+/***** 论坛-发帖 *****/
+.page-bbs-post{
+	width: 100%;
+	display: table;
+	position: relative;
+	background: #fff;
+	padding: 1.375em 0 9.625em;
+}
+.bbs-post-column{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	font-size: 1em;
+	line-height: 1.75em;
+	color: #1a4781;
+	margin-bottom: 4px;
+}
+.bbs-post-title .form-control{
+	border-color: #bfbfbf;
+}
+.bbs-post-title{
+	margin-bottom: 1.25em;
+}
+.bbs-post-edit{
+	width: 100%;
+	height: 31.25em;
+	display: block;
+	overflow: hidden;
+	border: solid 1px #bfbfbf;
+}
+.bbs-post-edit img{
+	max-width: 100%;
+}
+.bbs-post-verify{
+	width: 100%;
+	max-width: 32.5em;
+	display: table;
+	padding: 1.25em 0 2.5em;
+	overflow: hidden;
+	position: relative;
+}
+.bbs-post-verify .btn-tool{
+	font-size: 0.875em;
+	line-height: 2.857em;
+	white-space: nowrap;
+	margin: 0 0 0 0.714em;
+}
+.bbs-post-verify .btn-tool .image{
+	width: 9.286em;
+	height: 2.857em;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	border: solid 1px #b2b2b2;
+}
+.bbs-post-verify .btn-tool .image img{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	display: block;
+}
+.bbs-post-verify .btn-tool .btn-change{
+	color: #49b3f5;
+	padding: 0 0.571em;
+	display: inline-block;
+	vertical-align: middle;
+}
+.bbs-post-btn .btn-publish{
+	font-size: 1em;
+	line-height: 2.5em;
+	width: 100%;
+	max-width: 11.25em;
+	height: 2.5em;
+	display: block;
+}
+
+/***** 论坛-论坛列表 *****/
+.page-bbs-list{
+	width: 100%;
+	display: block;
+	position: relative;
+	background: #fff;
+	padding: 1.875em 0 9.625em;
+}
+.bbs-introd-box{
+	width: 100%;
+	display: table;
+	border: solid 1px #e6e6e6;
+	padding: 2.188em 6%;
+	position: relative;
+	margin-bottom: 1.875em;
+}
+.bbs-introd-box .icon{
+	width: 10em;
+	display: block;
+	overflow: hidden;
+	margin: 4px 1.875em 0 0;
+	float: left;
+}
+.bbs-introd-box .icon img{
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+.bbs-introd-box .title{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	font-size: 1.5em;
+	line-height: 1.25em;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 0.625em;
+}
+.bbs-introd-box .desc{
+	font-size: 1em;
+	line-height: 1.75em;
+	color: #999999;
+	word-break: break-word;
+}
+.bbs-introd-box .bot{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	line-height: 2.5em;
+	margin-top: 1.5em;
+}
+.bbs-introd-box .bot-btn{
+	float: left;
+	margin-top: -2.688em;
+}
+.bbs-introd-box .btn-publish{
+	width: 8.75em;
+}
+.bbs-introd-box .bot-info{
+	text-align: right;
+	font-size: 0.875em;
+	line-height: 1.286em;
+	color: #999;
+	padding: 1.786em 0 0;
+}
+.bbs-introd-box .bot-info span+span{
+	margin-left: 1.429em;
+}
+.bbs-introd-box .bot-info .black{
+	color: #333;
+	font-style: normal;
+}
+@media screen and (max-width:850px){
+	.bbs-introd-box .bot-info{
+		padding: 0;
+		text-align: left;
+	}
+	.bbs-introd-box .bot-btn{
+		float: none;
+		margin-top: 2em;
+	}
+}
+@media screen and (max-width:560px){
+	.bbs-introd-box .icon{
+		float: none;
+		margin: 0 auto 1.5em;
+	}
+	.bbs-introd-box .table-cell{
+		display: block;
+	}
+}
+
+.bbs-list-box{
+	width: 100%;
+	overflow: hidden;
+	background: #fcfcfc;
+	border: solid 1px #e6e6e6;
+	padding: 2.5em 6% 3.375em;
+}
+.bbs-list-hd{
+	padding: 0 0 0.5em 0;
+	border-bottom: solid 1px #ccc;
+	width: 100%;
+	overflow: hidden;
+}
+.bbs-list-hd a.tab{
+	font-size: 0.875em;
+	line-height: 2.143em;
+	color: #999;
+	display: block;
+	text-align: center;
+	float: left;
+	width: 25%;
+	max-width: 7.143em;
+	cursor: pointer;
+}
+.bbs-list-hd a.tab+a.tab{
+	margin-left: 0.714em;
+}
+.bbs-list-hd a.tab.active{
+	background: #1a4781;
+	color: #fff;
+}
+
+.bbs-list{
+	width: 100%;
+	overflow: hidden;
+}
+.bbs-list-item{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	padding: 0.875em 1em;
+	border-bottom: dotted 1px #d9d9d9;
+}
+.bbs-list-item:hover{
+	background-color: #ebebeb;
+}
+.bbs-list-item a{
+	width: 100%;
+	display: block;
+	color: #333;
+	overflow: hidden;
+}
+.bbs-list-title{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	font-size: 1em;
+	line-height: 1.875em;
+	color: #333;
+}
+.bbs-list-title .title{
+	word-break: break-word;
+}
+.bbs-list-title img{
+	height: 0.875em;
+	margin: -3px 0 0 0.5em;
+}
+.bbs-list-info{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 0.429em;
+	font-size: 0.875em;
+	line-height: 1.714em;
+	color: #999;
+	white-space: nowrap;
+}
+.bbs-list-info .info{
+	float: left;
+}
+.bbs-list-info img{
+	height: 1em;
+	margin: -3px 5px 0 0;
+}
+.bbs-list-info .pull-left .info+.info{
+	padding: 0 0 0 0.571em;
+	margin: 0 0 0 0.571em;
+	border-left: solid 1px #999;
+}
+.bbs-list-info .pull-right .info+.info{
+	margin-left: 2.286em;
+}
+.bbs-list-info .author{
+	max-width: 15em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media screen and (max-width:768px){
+	.bbs-list-hd a.tab{
+		font-size: 1em;
+	}
+	.bbs-list-hd a.tab+a.tab{
+		margin: 0;
+	}
+	.bbs-list-info .pull-right .info+.info{
+		margin-left: 0.5em;
+	}
+}
+@media screen and (max-width:340px){
+	.bbs-list-info .pull-right{
+		width: 100%;
+		margin-top: 0.5em;
+	}
+}
+.pagination-box{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	font-size: 0.875em;
+	line-height: 2em;
+	color: #666;
+	margin-top: 3.926em;
+}
+.pagination-box a{
+	width: auto;
+	min-width: 2.143em;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 3px;
+	text-align: center;
+	color: #666;
+	margin: 0 5px;
+	border: solid 1px #bfbfbf;
+}
+.pagination-box a:hover{
+	border-color: #1a4781;
+}
+.pagination-box a.active,
+.pagination-box a.active:hover{
+	border-color: #1a4781;
+	background: #1a4781;
+	color: #fff;
+}
+@media screen and (max-width:441px){
+	.pagination-box .page-num{
+		display: none;
+	}
+}
+
+/**** 论坛-查看 *****/
+.page-bbs-detail{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding: 1.875em 0 8.125em;
+}
+.bbs-detial-box{
+	width: 100%;
+	overflow: hidden;
+	border: solid 1px #e6e6e6;
+	padding: 2em 6% 4.75em;
+	margin-bottom: 1.875em;
+}
+.bbs-detail-hd{
+	width: 100%;
+	display: table;
+	overflow: hidden;
+	padding: 0 0 1.875em;
+	border-bottom: solid 1px #ccc;
+}
+.bbs-det-portrait{
+	width: 5em;
+	height: 5em;
+	display: block;
+	overflow: hidden;
+	float: left;
+	background: url(../images/bg_13.png) no-repeat center center;
+	background-size: cover;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	margin: 0.5em 2.5em 0 0;
+}
+.bbs-detail-hd .title{
+	font-size: 1em;
+	line-height: 1.875em;
+	color: #1a4781;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	word-break: break-word;
+}
+.bbs-detail-hd .info-box{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	font-size: 0.875em;
+	line-height: 2em;
+	color: #999;
+}
+.bbs-detail-hd .info-box .info{
+	float: left;
+}
+.bbs-detail-hd .info-box  img{
+	height: 1em;
+	margin: -3px 5px 0 0;
+}
+.bbs-detail-hd .info-box .pull-left .info{
+	margin-right: 1.429em;
+}
+.bbs-detail-hd .info-box .pull-right .info{
+	margin-right: 2.286em;
+}
+.bbs-detail-hd .info-box .pull-right .info:last-child,
+.bbs-detail-hd .info-box .pull-left .info:last-child{
+	margin-right: 0;
+}
+
+.bbs-detail-doc{
+	width: 100%;
+	overflow: hidden;
+	font-size: 0.875em;
+	line-height: 1.714em;
+	color: #333;
+	padding: 3em 0 0;
+}
+.bbs-detail-doc img{
+	max-width: 100%;
+}
+
+.bbs-mess-box{
+	width: 100%;
+	border: solid 1px #e6e6e6;
+	background: #fcfcfc;
+	padding: 0.5em 6% 3.375em;
+	margin-bottom: 1.875em;
+}
+.bbs-mess-list li{
+	width: 100%;
+	overflow: hidden;
+	padding: 0.875em 0 1.375em;
+	border-bottom: dotted 1px #d9d9d9;
+	word-break: break-word;
+}
+
+.bbs-mess-hd{
+	width: 100%;
+	overflow: hidden;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 3px 5em 3px 0;
+	position: relative;
+	margin-bottom: 0.5em;
+}
+.bbs-mess-hd .poster{
+	float: left;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #1a4781;
+	margin: 0 1.375em 0 0;
+}
+.bbs-mess-hd .date{
+	float: left;
+	font-size: 0.75em;
+	color: #999;
+}
+.bbs-mess-hd .floor{
+	float: right;
+	font-size: 0.875em;
+	color: #999;
+	position: absolute;
+	right: 0;
+	top: 3px;
+}
+.bbs-mess-doc{
+	width: 100%;
+	overflow: hidden;
+	font-size: 0.875em;
+	line-height: 1.714em;
+	color: #333;
+}
+.bbs-mess-bot{
+	width: 100%;
+	display: block;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	color: #999;
+	padding: 3px 0;
+	margin-top: 2em;
+}
+.bbs-mess-bot a{
+	color: #999;
+}
+.bbs-mess-bot .icon{
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -0.7em 5px 0 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.icon-thumb{
+	background-image: url(../images/icon_10.png);
+}
+.bbs-mess-bot .fn.active .icon-thumb{
+	background-image: url(../images/icon_11.png);
+}
+
+.bbs-mess-edit{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding: 1.5em 6%;
+	background: #fff;
+	border: solid 1px #e6e6e6;
+}
+
+.bbs-mess-edit  .mess-edit-before{
+	width: 100%;
+	max-width: 100%;
+	height: 9.286em;
+	display: table;
+	overflow: hidden;
+	border: solid 1px #e4e4e4;
+	background: #fff;
+	font-size: 0.875em;
+	line-height: 2em;
+	color: #333;
+}
+.bbs-mess-edit  .mess-edit-before .table-cell{
+	vertical-align: middle;
+	text-align: center;
+	padding: 1em;
+}
+.bbs-mess-edit  .mess-edit-before a[href]{
+	color: #49b3f5;
+	padding: 0 5px;
+}
+
+.bbs-mess-edit .mess-edit-after{
+	width: 100%;
+	max-width: 100%;
+	height: 8.125em;
+	display: block;
+	overflow: hidden;
+	border: solid 1px #e4e4e4;
+	background: #fff;
+}
+.bbs-mess-edit .mess-edit-after img{
+	max-width: 100%;
+}
+.bbs-mess-edit .mess-tool{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin-top: 1.375em;
+}
+.bbs-mess-edit .btn-reply{
+	width: 8.75em;
+}
+
+@media screen and (max-width:992px ) {
+	.bbs-detail-doc,
+	.bbs-mess-edit  .mess-edit-before{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width:600px){
+	.bbs-det-portrait{
+		width: 3.5em;
+		height: 3.5em;
+		margin-right: 1em;
+	}
+	.bbs-detail-hd .info-box .pull-right{
+		width: 100%;
+	}
+}
+
+/***** 
+ * 2017/4/27
+ * 赛事信息-新增
+******/
+.game-info-award .wx-box {
+  margin-top: 1.5em;
+}
+.game-info-award .wx-box .doc{
+  color: #eb5413;
+  text-indent: 2em;
+}
+.game-info-award .wx-box .icon-wx{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/icon_wx4.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.game-info-award .pop-wx {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  margin-bottom: -0.1em;
+}
+.game-info-award .pop-wx .arrow{
+  width: 1em;
+  height: 1em;
+  display: block;
+  margin: 0 auto;
+  border: solid 0.5em transparent;
+  border-top-color: #1ec6a1;
+}
+.game-info-award .pop-wx .bd{
+  width: 9.375em;
+  height: 9.375em;
+  display: block;
+  border: solid 0.625em #1ec6a1;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+.game-info-award .pop-wx .bd img{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+.game-info-award .wx-box .icon-wx:hover .pop-wx{
+  display: block;
+}
+.game-info-award .wx{
+  width: 9.375em;
+  height: 9.375em;
+  display: block;
+  border: solid 0.625em #1ec6a1;
+  overflow: hidden;
+  margin: 1em auto 0;
+}
+.game-info-award .wx img{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/**** 4-28 新增 *****/
+select.form-control1{
+  width: 47%;
+  margin-right: 4%;
+  float: left;
+}
+select.last{
+  margin-right: 0;
+}
+.form-group.col-sm-6 select.form-control1{
+	width: 48%;
+}
+.form-pcent-pinfo .form-group-bd1{
+  /*width: 62%;*/
+  display: table;
+}
+
+@media screen and (max-width:768px ) {
+  .form-group.col-sm-6 select.form-control1{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.8em;
+  }
+  select.last{
+    margin-bottom: 0
+  }
+  .form-pcent-pinfo .form-group-bd1{
+    width: 100%;
+  }
+}
+
+/**** 5-2 新增 *****/
+.form-list{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border: 1px solid #c8c8c8;
+  border-top: none;
+  z-index: 10;
+  background: #fff;
+  max-height: 13.57em;
+  overflow: auto;
+}
+.form-list li{
+    padding: 0.357em 0.571em;
+    font-size: 0.875em;
+    line-height: 2em;
+    color: #333;
+    cursor: pointer;
+}
+.form-list li:hover{
+  color: #1edbb6;
+}
+.row1{
+  overflow:inherit;
+}
+
+/*** 5.12 新增 ****/
+.bbs-post-verify input.form-control.hadHolder{
+	height: 2.857em;
+}
+.bbs-mess-edit .mess-edit-after{
+	height: 20em;
+}
+.bbs-mess-edit .pull-left{
+	width: 5em;
+	margin: 0.5em 2.5em 0 0;
+	overflow: hidden;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #1352a2;
+	word-break: break-word;
+}
+.bbs-mess-edit .bbs-det-portrait{
+	margin-bottom: 6px;
+}
+@media screen and (max-width: 600px){
+	.bbs-mess-edit .pull-left{
+		width: 3.5em;
+		margin-right: 1.5em;
+	}
+}
